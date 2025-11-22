@@ -111,7 +111,7 @@ function App() {
               </div>
               <p className="footer-description">
                 Honoring Samoan tradition through craftsmanship and flame. Every
-                MANA Fireknife is a bridge between heritage, artistry, and the
+                hula dance is a bridge between heritage, artistry, and the
                 spirit of Siva Afi.
               </p>
             </div>
