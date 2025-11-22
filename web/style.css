@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../web/src/assets/homepage_background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  margin-right: 60px;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+ul li.active a {
+  background-color: #fff;
+  color: #000;
+}
+
+.logo img {
+  float: left;
+  width: 150px;
+  height: auto;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title h1 {
+  color: #fff;
+  font-size: 85px;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  color: #fff;
+  transition: 0.6s ease;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.sub-menu {
+  display: none;
+  top: 6%;
+  position: relative;
+}
+
+.sub-menu ul {
+  position: absolute;
+}
+
+.main ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background-color: rgb(0, 45, 117);
+  margin-top: 12px;
+  margin-left: -8px;
+}
+
+.main ul li:hover .sub-menu ul {
+  display: block;
+  margin: 6px;
+}
+.main ul li:hover .sub-menu ul li {
+  width: 75px;
+  padding: 5px;
+  border-bottom: 1px#fff;
+  background: transparent;
+  transition: 0.4s ease;
+  text-align: left;
+  border-radius: 0;
+}
+
+.main ul li:hover .sub-menu ul li:last-child {
+  border-bottom: none;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 20px 30px;
+  font-family: Century Gothic, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  color: #b0b0b0;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-heading {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Best Sellers */
+.best-sellers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-title {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links li a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ffffff;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #333333;
+  margin-bottom: 20px;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #b0b0b0;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .product-item {
+    flex-direction: row;
+  }
+}
