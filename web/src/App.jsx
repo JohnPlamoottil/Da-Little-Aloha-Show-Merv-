@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useState } from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -11,6 +12,16 @@ import USA from "./pages/USA";
 import Philippines from "./pages/Philippines";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <Router>
       <div className="App">
@@ -20,24 +31,46 @@ function App() {
               <img src="/logo.png" alt="Logo" />
             </div>
 
-            <ul className="nav-menu">
+            <button
+              className={`hamburger ${isMenuOpen ? "active" : ""}`}
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
               <li className="active">
-                <Link to="/">HOME</Link>
+                <Link to="/" onClick={closeMenu}>
+                  HOME
+                </Link>
               </li>
               <li>
-                <Link to="/about-us">ABOUT US</Link>
+                <Link to="/about-us" onClick={closeMenu}>
+                  ABOUT US
+                </Link>
               </li>
               <li>
-                <Link to="/faqs">FAQS</Link>
+                <Link to="/faqs" onClick={closeMenu}>
+                  FAQS
+                </Link>
               </li>
               <li>
-                <Link to="/gallery">GALLERY</Link>
+                <Link to="/gallery" onClick={closeMenu}>
+                  GALLERY
+                </Link>
               </li>
               <li>
-                <Link to="/shop">SHOP</Link>
+                <Link to="/shop" onClick={closeMenu}>
+                  SHOP
+                </Link>
               </li>
               <li>
-                <Link to="/contact-us">CONTACT US</Link>
+                <Link to="/contact-us" onClick={closeMenu}>
+                  CONTACT US
+                </Link>
               </li>
             </ul>
           </div>
