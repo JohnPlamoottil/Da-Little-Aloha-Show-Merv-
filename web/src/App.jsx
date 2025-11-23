@@ -52,15 +52,15 @@ function App() {
                   <h1>Da Little Aloha Show</h1>
                 </div>
                 <div className="button">
-                  <a href="#" className="btn">
+                  <Link to="/gallery" className="btn">
                     WATCH VIDEO
-                  </a>
-                  <a href="#" className="btn">
+                  </Link>
+                  <Link to="/history-of-dancing" className="btn">
                     BASIC SKILLS
-                  </a>
-                  <a href="#" className="btn">
+                  </Link>
+                  <Link to="/about-us" className="btn">
                     LEARN MORE
-                  </a>
+                  </Link>
                 </div>
               </header>
             }
@@ -163,7 +163,8 @@ function App() {
           <div className="footer-bottom">
             <hr className="footer-divider" />
             <p className="footer-copyright">
-              MANA Aloha Hula Show © 2025. All rights reserved.
+              MANA Aloha Hula Show © 2025. All rights reserved. John Kanna
+              Plamoottil
             </p>
           </div>
         </footer>
