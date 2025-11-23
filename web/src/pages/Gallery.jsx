@@ -10,8 +10,8 @@ function Gallery() {
       }}
     >
       <div className="page-content">
-        <h1>Gallery</h1>
-        <p>Browse our photo and video gallery.</p>
+        <h1 style={{ color: "white" }}>Gallery</h1>
+        <p style={{ color: "white" }}>Browse our photo and video gallery.</p>
       </div>
     </div>
   );
