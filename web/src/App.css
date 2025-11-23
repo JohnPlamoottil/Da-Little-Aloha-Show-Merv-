@@ -12,6 +12,7 @@ main {
   min-height: 50vh;
   padding: 2rem;
   background: transparent;
+  margin-top: 80px;
 }
 
 .page-content {

@@ -14,79 +14,58 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header>
-          <div className="main">
+        <nav className="navbar">
+          <div className="nav-container">
             <div className="logo">
               <img src="/logo.png" alt="Logo" />
             </div>
 
-            <ul>
+            <ul className="nav-menu">
               <li className="active">
-                <Link to="/">
-                  <i className="fa fa-home"></i>Home
-                </Link>
+                <Link to="/">HOME</Link>
               </li>
               <li>
-                <Link to="/about-us">About Us</Link>
+                <Link to="/about-us">ABOUT US</Link>
               </li>
               <li>
-                <Link to="/faqs">FAQs</Link>
+                <Link to="/faqs">FAQS</Link>
               </li>
               <li>
-                <Link to="/gallery">Gallery</Link>
+                <Link to="/gallery">GALLERY</Link>
               </li>
               <li>
-                <Link to="/shop">Shop</Link>
+                <Link to="/shop">SHOP</Link>
               </li>
               <li>
-                <Link to="/history-of-dancing">History of Dancing</Link>
-              </li>
-              <li>
-                <Link to="/contact-us">Contact Us</Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <i className="fa fa-caret-down"></i> More Samoan Hula{" "}
-                  <i className="fa fa-caret-down"></i>
-                </Link>
-                <div className="sub-menu">
-                  <ul>
-                    <li>
-                      <Link to="/samoan-hula/usa">USA</Link>
-                    </li>
-                    <li>
-                      <Link to="/samoan-hula/philippines">Philippines</Link>
-                    </li>
-                  </ul>
-                </div>
+                <Link to="/contact-us">CONTACT US</Link>
               </li>
             </ul>
           </div>
+        </nav>
 
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <div className="title">
-                    <h1>Da Little Aloha Show</h1>
-                  </div>
-                  <div className="button">
-                    <a href="#" className="btn">
-                      WATCH VIDEO
-                    </a>
-                    <a href="#" className="btn">
-                      BASIC SKILLS
-                    </a>
-                    <a href="#" className="btn">
-                      LEARN MORE
-                    </a>
-                  </div>
-                </>
-              }
-            />
-          </Routes>
-        </header>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <header className="hero">
+                <div className="title">
+                  <h1>Da Little Aloha Show</h1>
+                </div>
+                <div className="button">
+                  <a href="#" className="btn">
+                    WATCH VIDEO
+                  </a>
+                  <a href="#" className="btn">
+                    BASIC SKILLS
+                  </a>
+                  <a href="#" className="btn">
+                    LEARN MORE
+                  </a>
+                </div>
+              </header>
+            }
+          />
+        </Routes>
 
         <main>
           <Routes>

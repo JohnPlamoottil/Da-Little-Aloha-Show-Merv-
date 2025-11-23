@@ -13,46 +13,75 @@ body {
   min-height: 100vh;
 }
 
-header {
-  background: transparent;
-  min-height: 100vh;
-}
-ul {
-  float: right;
-  list-style-type: none;
-  margin-top: 30px;
-  margin-right: 60px;
-}
-ul li {
-  display: inline-block;
-}
-ul li a {
-  text-decoration: none;
-  color: #fff;
-  padding: 5px 20px;
-  border: 1px solid transparent;
-  transition: 0.5s ease;
+/* White Navigation Bar */
+.navbar {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-ul li a:hover {
-  background-color: #fff;
-  color: #000;
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
 }
 
-ul li.active a {
-  background-color: #fff;
-  color: #000;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-  float: left;
-  width: 150px;
+  width: 80px;
   height: auto;
 }
 
-.main {
-  max-width: 1200px;
-  margin: auto;
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #0066cc;
+  border-bottom: 2px solid #0066cc;
+}
+
+.nav-menu li.active a {
+  color: #0066cc;
+  border-bottom: 2px solid #0066cc;
+}
+
+/* Hero Section */
+.hero {
+  background: transparent;
+  min-height: 100vh;
+  padding-top: 80px;
 }
 
 .title {
