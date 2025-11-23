@@ -32,11 +32,15 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' style='font-size:32px;'><text y='32'>🌺</text></svg>") 16 16, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' style='font-size:32px;'><text y='32'>🌺</text></svg>")
+      16 16,
+    auto;
 }
 
 * {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' style='font-size:32px;'><text y='32'>🌺</text></svg>") 16 16, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' style='font-size:32px;'><text y='32'>🌺</text></svg>")
+      16 16,
+    auto;
 }
 
 h1 {
