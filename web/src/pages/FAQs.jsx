@@ -14,7 +14,7 @@ function FAQs() {
           FAQs
         </h1>
         <p className="text-xl" style={{ color: "white" }}>
-          Frequently Asked Questions about our show and performances.
+          Frequently Asked Questions about our show and performances
         </p>
       </div>
     </div>
