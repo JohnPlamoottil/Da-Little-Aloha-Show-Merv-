@@ -60,11 +60,15 @@ ul li.active a {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }
 
 .title h1 {
   color: #fff;
   font-size: 85px;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 .button {
@@ -302,12 +306,13 @@ ul li.active a {
   /* Title adjustments */
   .title {
     top: 40%;
-    width: 90%;
+    width: 100%;
   }
 
   .title h1 {
     font-size: 50px;
     white-space: nowrap;
+    overflow: visible;
   }
 
   /* Button adjustments */
@@ -382,11 +387,15 @@ ul li.active a {
     transform: none;
     margin: 30px 0;
     padding: 0 15px;
+    text-align: center;
   }
 
   .title h1 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.2;
+    white-space: nowrap;
+    overflow: visible;
+    display: inline-block;
   }
 
   /* Button adjustments */
