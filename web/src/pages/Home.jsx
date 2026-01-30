@@ -4,7 +4,9 @@ function Home() {
   return (
     <div className="page-content flex flex-col items-center">
       <h1></h1>
-      <p className="text-center">Click to watch our Welcome Video</p>
+      <p className="text-center text-white" style={{ color: "#ffffff" }}>
+        Click to watch our Welcome Video
+      </p>
       <video
         controls
         controlsList="nodownload"
