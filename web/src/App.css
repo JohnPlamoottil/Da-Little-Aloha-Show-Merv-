@@ -8,6 +8,14 @@
   min-height: 100vh;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 main {
   min-height: 50vh;
   padding: 2rem;
