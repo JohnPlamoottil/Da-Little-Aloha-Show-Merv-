@@ -10,6 +10,7 @@ import HistoryOfDancing from "./pages/HistoryOfDancing";
 import ContactUs from "./pages/ContactUs";
 import USA from "./pages/USA";
 import Philippines from "./pages/Philippines";
+import logo from "./assets/logo.png";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ function App() {
         <nav className="navbar">
           <div className="nav-container">
             <div className="logo">
-              <img src="/logo.png" alt="Logo" />
+              <img src={logo} alt="Logo" />
             </div>
 
             <button
@@ -119,7 +120,7 @@ function App() {
             {/* Column 1: Logo and Description */}
             <div className="footer-column">
               <div className="footer-logo">
-                <img src="/logo.png" alt="Da Little Aloha Show" />
+                <img src={logo} alt="Da Little Aloha Show" />
               </div>
               <p className="footer-description">
                 Honoring Samoan tradition through craftsmanship and flame. Every
