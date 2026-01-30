@@ -89,13 +89,13 @@ function App() {
                 </div>
                 <div className="button">
                   <Link to="/gallery" className="btn">
-                    WATCH VIDEO
+                    Gallery
                   </Link>
                   <Link to="/history-of-dancing" className="btn">
-                    BASIC SKILLS
+                    History of Polynesian Dance
                   </Link>
                   <Link to="/about-us" className="btn">
-                    LEARN MORE
+                    About Us
                   </Link>
                 </div>
               </header>
@@ -201,7 +201,7 @@ function App() {
           <div className="footer-bottom">
             <hr className="footer-divider" />
             <p className="footer-copyright">
-              MANA Aloha Hula Show © 2025. All rights reserved. John Kanna
+              MANA Aloha Hula Show © 2025-2026. All rights reserved. John Kanna
               Plamoottil
             </p>
           </div>
