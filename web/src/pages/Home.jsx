@@ -5,6 +5,17 @@ function Home() {
     <div className="page-content">
       <h1></h1>
       <p>Click to watch our Welcome Video</p>
+      <video controls className="mt-4 w-full max-w-4xl rounded-lg shadow-lg">
+        <source
+          src="https://res.cloudinary.com/ds1fxskme/video/upload/v1769807988/aloha_intro_hfz6ks.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://res.cloudinary.com/ds1fxskme/video/upload/v1769807988/aloha_intro_hfz6ks.mov"
+          type="video/quicktime"
+        />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }
