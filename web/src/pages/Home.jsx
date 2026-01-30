@@ -2,14 +2,14 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="page-content">
+    <div className="page-content flex flex-col items-center">
       <h1></h1>
-      <p>Click to watch our Welcome Video</p>
+      <p className="text-center">Click to watch our Welcome Video</p>
       <video
         controls
         controlsList="nodownload"
         onContextMenu={(event) => event.preventDefault()}
-        className="mt-4 w-full max-w-4xl rounded-lg shadow-lg"
+        className="mt-6 w-full max-w-4xl rounded-lg shadow-lg"
       >
         <source
           src="https://res.cloudinary.com/ds1fxskme/video/upload/v1769807988/aloha_intro_hfz6ks.mp4"
