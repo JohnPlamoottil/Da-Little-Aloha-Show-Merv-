@@ -10,7 +10,10 @@ function AboutUs() {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${aboutBackground})`,
       }}
     >
-      <div className="page-content text-white">
+      <div
+        className="page-content text-yellow-300"
+        style={{ color: "#facc15" }}
+      >
         <h1 className="text-5xl font-bold mb-6">About Us</h1>
         <p className="text-xl">
           Learn more about Da Little Aloha Show and our mission.
