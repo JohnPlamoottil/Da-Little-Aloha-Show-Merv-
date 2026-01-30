@@ -5,9 +5,13 @@ import alohaPoster from "../assets/Aloha poster 1.png";
 function AboutUs() {
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-fixed bg-no-repeat"
+      className="min-h-screen bg-no-repeat"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${aboutBackground})`,
+        backgroundImage: `url(${aboutBackground})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center top",
+        backgroundSize: "contain",
+        backgroundColor: "#000",
       }}
     >
       <div className="page-content text-white" style={{ color: "#ffffff" }}>
@@ -18,7 +22,7 @@ function AboutUs() {
         <img
           src={alohaPoster}
           alt="Aloha poster"
-          className="mt-8 w-full max-w-3xl rounded-lg shadow-lg"
+          className="mt-8 w-full max-w-3xl rounded-lg shadow-lg mx-auto block"
         />
       </div>
     </div>
