@@ -120,13 +120,13 @@ body {
 /* Hero Section */
 .hero {
   background: transparent;
-  min-height: 100vh;
-  padding-top: 80px;
+  min-height: 44vh;
+  padding-top: 66px;
 }
 
 .title {
   position: absolute;
-  top: 40%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
