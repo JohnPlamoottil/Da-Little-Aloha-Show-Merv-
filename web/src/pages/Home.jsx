@@ -9,7 +9,7 @@ function Home() {
         controls
         controlsList="nodownload"
         onContextMenu={(event) => event.preventDefault()}
-        className="mt-6 w-full max-w-4xl rounded-lg shadow-lg"
+        className="mt-4 w-full max-w-2xl aspect-video rounded-lg shadow-lg"
       >
         <source
           src="https://res.cloudinary.com/ds1fxskme/video/upload/v1769807988/aloha_intro_hfz6ks.mp4"
