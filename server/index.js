@@ -1,11 +1,16 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import { v2 as cloudinary } from "cloudinary";
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+cloudinary.config({
+  cloudinary_url: process.env.CLOUDINARY_URL,
+});
 
 // Middleware
 app.use(cors());
@@ -18,6 +23,15 @@ app.get("/", (req, res) => {
 
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
+});
+
+app.get("/api/cloudinary/status", (req, res) => {
+  const { cloud_name: cloudName } = cloudinary.config();
+
+  res.json({
+    configured: Boolean(process.env.CLOUDINARY_URL),
+    cloudName: cloudName || null,
+  });
 });
 
 // Start server
