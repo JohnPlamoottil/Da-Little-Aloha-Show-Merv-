@@ -29,7 +29,9 @@ function App() {
         <nav className="navbar">
           <div className="nav-container">
             <div className="logo">
-              <img src={logo} alt="Logo" />
+              <Link to="/" onClick={closeMenu} aria-label="Go to home">
+                <img src={logo} alt="Logo" />
+              </Link>
             </div>
 
             <button
@@ -120,7 +122,9 @@ function App() {
             {/* Column 1: Logo and Description */}
             <div className="footer-column">
               <div className="footer-logo">
-                <img src={logo} alt="Da Little Aloha Show" />
+                <Link to="/" aria-label="Go to home">
+                  <img src={logo} alt="Da Little Aloha Show" />
+                </Link>
               </div>
               <p className="footer-description">
                 Honoring Samoan tradition through craftsmanship and flame. Every
