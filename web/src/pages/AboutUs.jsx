@@ -1,5 +1,6 @@
 import React from "react";
 import aboutBackground from "../assets/aboutpage_background.jpeg";
+import alohaPoster from "../assets/Aloha poster 1.png";
 
 function AboutUs() {
   return (
@@ -14,6 +15,11 @@ function AboutUs() {
         <p className="text-xl">
           Learn more about Da Little Aloha Show and our mission.
         </p>
+        <img
+          src={alohaPoster}
+          alt="Aloha poster"
+          className="mt-8 w-full max-w-3xl rounded-lg shadow-lg"
+        />
       </div>
     </div>
   );
