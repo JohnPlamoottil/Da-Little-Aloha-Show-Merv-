@@ -6,13 +6,21 @@ import mervActionPose from "../assets/merv_actionpose.JPG";
 function AboutUs() {
   return (
     <div className="min-h-screen">
-      <div className="page-content text-white" style={{ color: "#ffffff" }}>
+      <div
+        className="page-content text-white"
+        style={{
+          color: "#ffffff",
+          paddingTop: "0.75rem",
+          transform: "scale(0.9)",
+          transformOrigin: "top center",
+        }}
+      >
         <h1 className="text-5xl font-bold mb-6">About Us</h1>
         <p className="text-xl">
           Learn more about Da Little Aloha Show and Our Mission.
         </p>
         <div
-          className="mt-8 w-full max-w-5xl mx-auto"
+          className="mt-4 w-full max-w-5xl mx-auto"
           style={{ position: "relative" }}
         >
           <img
