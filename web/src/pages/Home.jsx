@@ -2,7 +2,13 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="page-content flex flex-col items-center">
+    <div
+      className="page-content flex flex-col items-center justify-center"
+      style={{
+        minHeight: "calc(100vh - 120px)",
+        transform: "translateY(-20px)",
+      }}
+    >
       <h1></h1>
       <p className="text-center text-white" style={{ color: "#ffffff" }}>
         Click to watch our Welcome Video
