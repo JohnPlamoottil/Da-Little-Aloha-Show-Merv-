@@ -159,6 +159,15 @@ function App() {
                   <span className="product-title">DOUBLES</span>
                 </div>
               </div>
+              <a
+                href="https://www.manafireknives.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button type="button" style={{ padding: "10px 50px" }}>
+                  Visit Mana Fire Knives
+                </button>
+              </a>
             </div>
 
             {/* Column 3: Links */}
@@ -178,13 +187,6 @@ function App() {
                   <Link to="/contact-us">Contact</Link>
                 </li>
               </ul>
-              <a
-                href="https://www.manafireknives.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button type="button">Visit Manafire Knives</button>
-              </a>
             </div>
 
             {/* Column 4: Socials */}
