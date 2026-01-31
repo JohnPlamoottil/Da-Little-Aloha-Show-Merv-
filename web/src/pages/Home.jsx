@@ -36,11 +36,14 @@ function Home() {
       <div className="w-full flex justify-center">
         <Link
           to="/contact-us"
-          className="mt-6 inline-flex items-center justify-center px-12 py-5 rounded-full font-semibold transition-all duration-300 hover:opacity-90"
+          className="mt-6 inline-flex items-center justify-center px-16 py-6 rounded-3xl font-semibold transition-all duration-300 hover:opacity-90"
           style={{
             backgroundColor: "#DFFF00",
             color: "#000000",
             fontSize: "56px",
+            padding: "24px 64px",
+            borderRadius: "9999px",
+            display: "inline-block",
           }}
         >
           Book Now
