@@ -44,19 +44,26 @@ function FAQs() {
         paddingTop: "120px",
       }}
     >
-      <div className="w-full max-w-5xl px-4 mx-auto">
-        <h1
-          className="font-bold mb-6 text-center"
-          style={{ color: "white", fontSize: "45px", padding: "5.5px" }}
-        >
-          FAQs
-        </h1>
-        <p
-          className="text-xl text-center"
-          style={{ color: "white", fontSize: "45px" }}
-        >
-          Frequently Asked Questions about our show and performances
-        </p>
+      <div className="w-full max-w-5xl px-4 mx-auto flex flex-col items-center text-center">
+        <div className="w-full flex flex-col items-center text-center">
+          <h1
+            className="w-full font-bold mb-6 text-center"
+            style={{
+              color: "white",
+              fontSize: "45px",
+              padding: "5.5px",
+              textAlign: "center",
+            }}
+          >
+            FAQs
+          </h1>
+          <p
+            className="w-full text-xl text-center"
+            style={{ color: "white", fontSize: "45px", textAlign: "center" }}
+          >
+            Frequently Asked Questions about our show and performances
+          </p>
+        </div>
 
         <div className="w-full max-w-3xl mx-auto space-y-0">
           {faqs.map((faq, index) => (
