@@ -163,6 +163,7 @@ function App() {
                 href="https://www.manafireknives.com/"
                 target="_blank"
                 rel="noreferrer"
+                style={{ display: "inline-block", marginTop: "12px" }}
               >
                 <button type="button" style={{ padding: "10px 50px" }}>
                   Visit Mana Fire Knives
