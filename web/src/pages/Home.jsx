@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -10,8 +11,11 @@ function Home() {
       }}
     >
       <h1></h1>
-      <p className="text-center text-white" style={{ color: "#ffffff" }}>
-        Click to watch our Welcome Video
+      <p
+        className="text-center text-white"
+        style={{ size: "555px", color: "#ffffff", fontSize: "56px" }}
+      >
+        Please Watch Our Welcome Video
       </p>
       <video
         controls
@@ -29,6 +33,13 @@ function Home() {
         />
         Your browser does not support the video tag.
       </video>
+      <Link
+        to="/contact-us"
+        className="mt-6 inline-flex items-center justify-center px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:opacity-90"
+        style={{ backgroundColor: "#ffffff", color: "#000000" }}
+      >
+        Book Now
+      </Link>
     </div>
   );
 }
