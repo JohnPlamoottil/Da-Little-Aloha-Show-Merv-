@@ -123,10 +123,17 @@ function App() {
             <div className="footer-column">
               <div className="footer-logo">
                 <Link to="/" aria-label="Go to home">
-                  <img src={logo} alt="Da Little Aloha Show" />
+                  <img
+                    src={logo}
+                    alt="Da Little Aloha Show"
+                    style={{ marginLeft: "120px" }}
+                  />
                 </Link>
               </div>
-              <p className="footer-description">
+              <p
+                className="footer-description"
+                style={{ fontSize: "1.2rem", marginLeft: "1.5rem" }}
+              >
                 Honoring Samoan tradition through craftsmanship and flame. Every
                 hula dance is a bridge between heritage, artistry, and the
                 spirit of Siva Afi.
@@ -135,7 +142,7 @@ function App() {
 
             {/* Column 2: Best Sellers */}
             <div className="footer-column">
-              <h3 className="footer-heading">BEST SELLERS</h3>
+              <h3 className="footer-heading">Mana Fire Knives</h3>
               <div className="best-sellers">
                 <div className="product-item">
                   <img
@@ -171,6 +178,13 @@ function App() {
                   <Link to="/contact-us">Contact</Link>
                 </li>
               </ul>
+              <a
+                href="https://www.manafireknives.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button type="button">Visit Manafire Knives</button>
+              </a>
             </div>
 
             {/* Column 4: Socials */}
