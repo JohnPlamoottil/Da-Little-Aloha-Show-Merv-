@@ -51,7 +51,7 @@ function AboutUs() {
               top: "58%",
               left: "50%",
               transform: "translateX(-50%)",
-              width: "40%",
+              width: "35%",
               maxWidth: "900px",
               zIndex: 9,
             }}
