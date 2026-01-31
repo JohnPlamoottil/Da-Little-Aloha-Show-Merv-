@@ -33,13 +33,15 @@ function Home() {
         />
         Your browser does not support the video tag.
       </video>
-      <Link
-        to="/contact-us"
-        className="mt-6 inline-flex items-center justify-center px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:opacity-90"
-        style={{ backgroundColor: "#ffffff", color: "#000000" }}
-      >
-        Book Now
-      </Link>
+      <div className="w-full flex justify-center">
+        <Link
+          to="/contact-us"
+          className="mt-6 inline-flex items-center justify-center px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:opacity-90"
+          style={{ backgroundColor: "#DFFF00", color: "#000000" }}
+        >
+          Book Now
+        </Link>
+      </div>
     </div>
   );
 }
