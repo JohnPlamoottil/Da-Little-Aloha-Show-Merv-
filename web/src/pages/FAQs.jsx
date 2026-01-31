@@ -46,12 +46,12 @@ function FAQs() {
     >
       <div className="w-full max-w-5xl px-4 mx-auto">
         <h1
-          className="font-bold mb-6 text-center"
+          className="font-bold mb-6 text-center font-bold mb-6"
           style={{ color: "white", fontSize: "45px", padding: "5.5px" }}
         >
-          Frequently Asked Questions (FAQs)
+          FAQs
         </h1>
-        <p className="mb-8 text-center text-white" style={{ fontSize: "45px" }}>
+        <p className="text-xl" style={{ color: "white", fontSize: "45px" }}>
           Frequently Asked Questions about our show and performances
         </p>
 
