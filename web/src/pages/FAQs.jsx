@@ -105,6 +105,7 @@ function FAQs() {
                     backgroundColor: "rgba(0, 32, 96, 0.95)",
                     color: "white",
                     borderTop: "1px solid rgba(255, 255, 255, 0.3)",
+                    fontSize: "25px",
                   }}
                 >
                   {faq.answer}
