@@ -16,7 +16,7 @@ function AboutUs() {
         }}
       >
         <h1 className="text-5xl font-bold mb-6">About Us</h1>
-        <p className="text-xl">
+        <p className="text-xl" style={{ fontSize: "45px" }}>
           Learn more about Da Little Aloha Show and Our Mission.
         </p>
         <div
