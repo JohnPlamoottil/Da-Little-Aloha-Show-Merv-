@@ -41,6 +41,7 @@ function FAQs() {
       className="min-h-screen bg-cover bg-center bg-fixed bg-no-repeat flex items-center justify-center py-20"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${faqBackground})`,
+        paddingTop: "120px",
       }}
     >
       <div className="w-full max-w-5xl px-4 mx-auto">
