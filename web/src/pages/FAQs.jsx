@@ -51,10 +51,7 @@ function FAQs() {
         >
           Frequently Asked Questions (FAQs)
         </h1>
-        <p
-          className="mb-8 text-center text-white"
-          style={{ fontSize: "45px" }}
-        >
+        <p className="mb-8 text-center text-white" style={{ fontSize: "45px" }}>
           Frequently Asked Questions about our show and performances
         </p>
 
