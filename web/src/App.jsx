@@ -30,7 +30,7 @@ function App() {
           <div className="nav-container">
             <div className="logo">
               <Link to="/" onClick={closeMenu} aria-label="Go to home">
-                <img src={logo} alt="Logo" />
+                <img src={logo} alt="Logo" style={{ width: "95px" }} />
               </Link>
             </div>
 
@@ -195,7 +195,7 @@ function App() {
               <h3 className="footer-heading">SOCIALS</h3>
               <div className="social-icons">
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/people/Merv-Mana-Papa/100067165101576/"
                   target="_blank"
                   rel="noreferrer"
                   className="social-icon"
@@ -203,7 +203,7 @@ function App() {
                   <i className="fa fa-facebook"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/manafireknives/"
                   target="_blank"
                   rel="noreferrer"
                   className="social-icon"
