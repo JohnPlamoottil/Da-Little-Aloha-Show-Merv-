@@ -74,22 +74,22 @@ function FAQs() {
             >
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full px-6 py-4 text-center flex justify-center items-center transition-all duration-300 hover:opacity-90"
+                className="w-full px-10 py-6 text-center flex justify-center items-center gap-3 transition-all duration-300 hover:opacity-90"
                 style={{
                   backgroundColor: "rgba(0, 32, 96, 0.95)",
                 }}
               >
                 <span
-                  className="text-lg font-semibold flex-grow text-center"
-                  style={{ color: "white" }}
-                >
-                  {faq.question}
-                </span>
-                <span
-                  className="text-2xl font-bold flex-shrink-0 ml-4"
+                  className="text-2xl font-bold flex-shrink-0"
                   style={{ color: "white" }}
                 >
                   {openIndex === index ? "−" : "+"}
+                </span>
+                <span
+                  className="text-xl font-semibold flex-grow text-center"
+                  style={{ color: "white" }}
+                >
+                  {faq.question}
                 </span>
               </button>
               <div
