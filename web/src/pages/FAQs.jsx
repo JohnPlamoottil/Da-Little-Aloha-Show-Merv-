@@ -87,7 +87,7 @@ function FAQs() {
                 </span>
                 <span
                   className="text-xl font-semibold flex-grow text-center"
-                  style={{ color: "white", fontSize: "50px" }}
+                  style={{ color: "white", fontSize: "30px" }}
                 >
                   {faq.question}
                 </span>
