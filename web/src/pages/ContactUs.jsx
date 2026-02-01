@@ -208,7 +208,7 @@ function ContactUs() {
                           style={{
                             color: "white",
                             fontSize: "20px",
-                            textAlign: "left",
+                            textAlign: "center",
                           }}
                         >
                           Name
@@ -227,7 +227,11 @@ function ContactUs() {
                           onChange={handleChange}
                           required
                           className="w-full h-12 border-b border-gray-800 bg-transparent px-0 py-2 text-gray-900 placeholder:text-gray-400 focus:border-gray-800 focus:outline-none"
-                          style={{ textAlign: "right", padding: "0 0 0 45px" }}
+                          style={{
+                            textAlign: "right",
+                            padding: "0 0px 0 369px",
+                            fontSize: "15px",
+                          }}
                           placeholder="First, Middle, Last"
                         />
                       </div>
@@ -259,7 +263,11 @@ function ContactUs() {
                           onChange={handleChange}
                           required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          style={{ textAlign: "right", padding: "0 0 0 45px" }}
+                          style={{
+                            textAlign: "right",
+                            padding: "0 0px 0 292px",
+                            fontSize: "15px",
+                          }}
                           placeholder="email@gmail.com"
                         />
                       </div>
@@ -290,7 +298,12 @@ function ContactUs() {
                           value={formValues.phone}
                           onChange={handleChange}
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          placeholder="1(area)555-5555"
+                          style={{
+                            padding: "0 0px 0 365px",
+                            textAlign: "right",
+                            fontSize: "15px",
+                          }}
+                          placeholder="+1(area)555-5555"
                         />
                       </div>
 
@@ -320,8 +333,13 @@ function ContactUs() {
                           value={formValues.eventDate}
                           onChange={handleChange}
                           required
-                          className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          placeholder="month/day/year @ time (timezone"
+                          className="w-full h-10 "
+                          style={{
+                            textAlign: "right",
+                            padding: "0 0px 0 230px",
+                            fontSize: "15px",
+                          }}
+                          placeholder="month/day/year @ time"
                         />
                       </div>
 
@@ -352,6 +370,11 @@ function ContactUs() {
                           onChange={handleChange}
                           required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          style={{
+                            padding: "0 0px 0 291px",
+                            textAlign: "right",
+                            fontSize: "15px",
+                          }}
                           placeholder="City, State"
                         />
                       </div>
@@ -384,6 +407,11 @@ function ContactUs() {
                           onChange={handleChange}
                           required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          style={{
+                            padding: "0 0px 0 10px",
+                            textAlign: "right",
+                            fontSize: "15px",
+                          }}
                           placeholder="# of Guests"
                         />
                       </div>
@@ -417,9 +445,13 @@ function ContactUs() {
                           value={formValues.notes}
                           onChange={handleChange}
                           required
-                          className="w-full rounded-md border border-gray-300 bg-white px-3 py-3 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder="Tell us about the event and/or any special requests"
-                          style={{ textAlign: "56pxs" }}
+                          style={{
+                            textAlign: "right",
+                            padding: "0 0px 0 10px",
+                            fontSize: "15px",
+                          }}
                         />
                       </div>
 
