@@ -408,7 +408,7 @@ function ContactUs() {
                           required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           style={{
-                            padding: "0 0px 0 10px",
+                            padding: "0 0px 0 291px",
                             textAlign: "right",
                             fontSize: "15px",
                           }}
@@ -441,16 +441,16 @@ function ContactUs() {
                         <textarea
                           id="notes"
                           name="notes"
-                          rows="1"
+                          rows="2"
                           value={formValues.notes}
                           onChange={handleChange}
                           required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          placeholder="Tell us about the event and/or any special requests"
+                          placeholder="Tell us about the event & any special requests"
                           style={{
-                            textAlign: "right",
-                            padding: "0 0px 0 10px",
-                            fontSize: "15px",
+                            textAlign: "center",
+                            padding: "0 0px 0 291px",
+                            fontSize: "10px",
                           }}
                         />
                       </div>
