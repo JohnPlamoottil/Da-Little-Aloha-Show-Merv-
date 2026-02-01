@@ -182,14 +182,12 @@ function ContactUs() {
               <form
                 onSubmit={handleSubmit}
                 className="mt-6 space-y-4 text-left mx-auto max-w-xl"
+                style={{ color: "white", textAlign: "left", fontSize: "33px" }}
               >
-                <div
-                  className="grid gap-4 sm:grid-cols-2"
-                  style={{ color: "white" }}
-                >
+                <div className="grid gap-4 sm:grid-cols-2">
                   <div className="flex flex-col gap-2">
                     <label htmlFor="name" className="text-sm font-medium">
-                      Full name
+                      Full Name
                     </label>
                     <input
                       id="name"
@@ -198,7 +196,7 @@ function ContactUs() {
                       value={formValues.name}
                       onChange={handleChange}
                       required
-                      className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
                       placeholder="Your name"
                     />
                   </div>
@@ -213,16 +211,13 @@ function ContactUs() {
                       value={formValues.email}
                       onChange={handleChange}
                       required
-                      className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
                       placeholder="you@email.com"
                     />
                   </div>
                 </div>
 
-                <div
-                  className="grid gap-4 sm:grid-cols-2"
-                  style={{ color: "white" }}
-                >
+                <div className="grid gap-4 sm:grid-cols-2">
                   <div className="flex flex-col gap-2">
                     <label htmlFor="phone" className="text-sm font-medium">
                       Phone
@@ -233,7 +228,7 @@ function ContactUs() {
                       type="tel"
                       value={formValues.phone}
                       onChange={handleChange}
-                      className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
                       placeholder="(555) 555-5555"
                     />
                   </div>
@@ -248,16 +243,13 @@ function ContactUs() {
                       value={formValues.eventDate}
                       onChange={handleChange}
                       required
-                      className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
                       placeholder="From Calendly selection"
                     />
                   </div>
                 </div>
 
-                <div
-                  className="grid gap-4 sm:grid-cols-2"
-                  style={{ color: "white" }}
-                >
+                <div className="grid gap-4 sm:grid-cols-2">
                   <div className="flex flex-col gap-2">
                     <label
                       htmlFor="eventLocation"
@@ -272,7 +264,7 @@ function ContactUs() {
                       value={formValues.eventLocation}
                       onChange={handleChange}
                       required
-                      className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
                       placeholder="City / Venue"
                     />
                   </div>
@@ -287,13 +279,13 @@ function ContactUs() {
                       min="1"
                       value={formValues.attendees}
                       onChange={handleChange}
-                      className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
                       placeholder="120"
                     />
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2" style={{ color: "white" }}>
+                <div className="flex flex-col gap-2">
                   <label htmlFor="notes" className="text-sm font-medium">
                     Additional details
                   </label>
@@ -303,7 +295,7 @@ function ContactUs() {
                     rows="4"
                     value={formValues.notes}
                     onChange={handleChange}
-                    className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                    className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
                     placeholder="Tell us about the event, timeline, or special requests."
                   ></textarea>
                 </div>
