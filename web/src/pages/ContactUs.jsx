@@ -188,7 +188,7 @@ function ContactUs() {
                   <div className="mt-6 rounded-3xl bg-white/95 p-8 text-gray-700 shadow-lg">
                     <form
                       onSubmit={handleSubmit}
-                      className="grid gap-8 text-left md:grid-cols-2"
+                      className="grid gap-6 text-left"
                     >
                       {/* Full Name */}
                       <div className="flex flex-col gap-2">
@@ -310,7 +310,7 @@ function ContactUs() {
                       </div>
 
                       {/* Additional Details */}
-                      <div className="flex flex-col gap-2 md:col-span-2">
+                      <div className="flex flex-col gap-2">
                         <label
                           htmlFor="notes"
                           className="text-sm font-medium text-gray-500 h-5 leading-5"
@@ -330,7 +330,7 @@ function ContactUs() {
 
                       {statusMessage && (
                         <div
-                          className={`rounded-2xl border p-3 text-sm md:col-span-2 ${
+                          className={`rounded-2xl border p-3 text-sm ${
                             statusType === "success"
                               ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-700"
                               : "border-red-500/40 bg-red-500/10 text-red-700"
@@ -340,10 +340,7 @@ function ContactUs() {
                         </div>
                       )}
 
-                      <div
-                        className="md:col-span-2"
-                        style={{ color: "black", textAlign: "center" }}
-                      >
+                      <div style={{ color: "black", textAlign: "center" }}>
                         <button
                           type="submit"
                           disabled={!isEmailConfigured || isSending}
