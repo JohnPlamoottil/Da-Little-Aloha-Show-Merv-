@@ -154,149 +154,170 @@ function ContactUs() {
             </section>
 
             <section className="rounded-3xl bg-black/60 p-6 shadow-xl backdrop-blur">
-              <div className="flex flex-col gap-2">
-                <h2
-                  className="text-2xl font-semibold"
-                  style={{ color: "white", fontSize: "53px" }}
-                >
-                  Send a Booking Request
-                </h2>
-                <p
-                  className="text-sm text-white/70"
-                  style={{ color: "white", fontSize: "33px" }}
-                >
-                  After selecting your preferred time, submit the form so we can
-                  confirm details.
-                </p>
-              </div>
-
-              {!isEmailConfigured && (
-                <div
-                  className="mt-4 rounded-2xl border border-yellow-400/60 bg-yellow-500/10 p-4 text-sm text-yellow-200"
-                  style={{ color: "yellow", fontSize: "83px" }}
-                >
-                  EmailJS is not configured.
-                </div>
-              )}
-
-              <form
-                onSubmit={handleSubmit}
-                className="mt-6 space-y-4 text-left ml-auto max-w-md"
-                style={{ color: "white", textAlign: "left", fontSize: "33px" }}
-              >
-                <div className="flex flex-col gap-4 items-end">
-                  <div className="grid w-full grid-cols-[240px_minmax(0,1fr)] items-center gap-x-8">
-                    <label
-                      htmlFor="name"
-                      className="text-sm font-medium text-left whitespace-nowrap"
+              <div className="relative">
+                <div className="absolute inset-0 rounded-3xl bg-black/60 backdrop-blur-lg"></div>
+                <div className="relative z-10">
+                  <div className="flex flex-col gap-2">
+                    <h2
+                      className="text-2xl font-semibold"
+                      style={{ color: "white", fontSize: "53px" }}
                     >
-                      Full Name
-                    </label>
-
-                    <input
-                      id="name"
-                      name="name"
-                      type="text"
-                      value={formValues.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
-                      style={{ color: "black" }}
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div className="flex w-full flex-col gap-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formValues.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
-                      style={{ color: "black", textAlign: "right" }}
-                      placeholder="you@email.com"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex flex-col gap-4 items-end">
-                  <div className="flex w-full flex-col gap-2">
-                    <label htmlFor="phone" className="text-sm font-medium">
-                      Phone
-                    </label>
-                    <input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formValues.phone}
-                      onChange={handleChange}
-                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
-                      style={{ color: "black", textAlign: "right" }}
-                      placeholder="(555) 555-5555"
-                    />
-                  </div>
-                  <div className="flex w-full flex-col gap-2">
-                    <label htmlFor="eventDate" className="text-sm font-medium">
-                      Preferred Date & Time
-                    </label>
-                    <input
-                      id="eventDate"
-                      name="eventDate"
-                      type="text"
-                      value={formValues.eventDate}
-                      onChange={handleChange}
-                      required
-                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
-                      style={{ color: "black", textAlign: "right" }}
-                      placeholder="From Calendly selection"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex flex-col gap-4 items-end">
-                  <div className="flex w-full flex-col gap-2">
-                    <label
-                      htmlFor="eventLocation"
-                      className="text-sm font-medium"
+                      Send a Booking Request
+                    </h2>
+                    <p
+                      className="text-sm text-white/70"
+                      style={{ color: "white", fontSize: "33px" }}
                     >
-                      Event Location
-                    </label>
-                    <input
-                      id="eventLocation"
-                      name="eventLocation"
-                      type="text"
-                      value={formValues.eventLocation}
-                      onChange={handleChange}
-                      required
-                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
-                      style={{ color: "black", textAlign: "right" }}
-                      placeholder="City / Venue"
-                    />
+                      After selecting your preferred time, submit the form so we can
+                      confirm details.
+                    </p>
                   </div>
-                  <div className="flex w-full flex-col gap-2">
-                    <label htmlFor="attendees" className="text-sm font-medium">
-                      Estimated Attendees
-                    </label>
-                    <input
-                      id="attendees"
-                      name="attendees"
-                      type="number"
-                      min="1"
-                      value={formValues.attendees}
-                      onChange={handleChange}
-                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
-                      style={{ color: "black", textAlign: "right" }}
-                      placeholder="120"
-                    />
-                  </div>
+
+                  {!isEmailConfigured && (
+                    <div
+                      className="mt-4 rounded-2xl border border-yellow-400/60 bg-yellow-500/10 p-4 text-sm text-yellow-200"
+                      style={{ color: "yellow", fontSize: "83px" }}
+                    >
+                      EmailJS is not configured.
+                    </div>
+                  )}
+
+                  <form
+                    onSubmit={handleSubmit}
+                    className="mt-6 space-y-6 text-left max-w-3xl mx-auto"
+                    style={{ color: "white" }}
+                  >
+                    {/* Full Name */}
+                    <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
+                      <label
+                        htmlFor="name"
+                        className="font-medium text-[28px] whitespace-nowrap"
+                      >
+                        Full Name
+                      </label>
+                      <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        value={formValues.name}
+                        onChange={handleChange}
+                        required
+                        className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                        style={{ color: "black" }}
+                        placeholder="Your name"
+                      />
+                    </div>
+
+                {/* Email */}
+                <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
+                  <label
+                    htmlFor="email"
+                    className="font-medium whitespace-nowrap"
+                  >
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formValues.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                    style={{ color: "black" }}
+                    placeholder="you@email.com"
+                  />
                 </div>
 
-                <div className="flex flex-col gap-2 items-end">
-                  <label htmlFor="notes" className="text-sm font-medium">
+                {/* Phone */}
+                <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
+                  <label
+                    htmlFor="phone"
+                    className="font-medium whitespace-nowrap"
+                  >
+                    Phone
+                  </label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value={formValues.phone}
+                    onChange={handleChange}
+                    className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                    style={{ color: "black" }}
+                    placeholder="(555) 555-5555"
+                  />
+                </div>
+
+                {/* Preferred Date & Time */}
+                <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
+                  <label
+                    htmlFor="eventDate"
+                    className="font-medium whitespace-nowrap"
+                  >
+                    Preferred Date & Time
+                  </label>
+                  <input
+                    id="eventDate"
+                    name="eventDate"
+                    type="text"
+                    value={formValues.eventDate}
+                    onChange={handleChange}
+                    required
+                    className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                    style={{ color: "black" }}
+                    placeholder="From Calendly selection"
+                  />
+                </div>
+
+                {/* Event Location */}
+                <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
+                  <label
+                    htmlFor="eventLocation"
+                    className="font-medium whitespace-nowrap"
+                  >
+                    Event Location
+                  </label>
+                  <input
+                    id="eventLocation"
+                    name="eventLocation"
+                    type="text"
+                    value={formValues.eventLocation}
+                    onChange={handleChange}
+                    required
+                    className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                    style={{ color: "black" }}
+                    placeholder="City / Venue"
+                  />
+                </div>
+
+                {/* Estimated Attendees */}
+                <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
+                  <label
+                    htmlFor="attendees"
+                    className="font-medium whitespace-nowrap"
+                  >
+                    Estimated Attendees
+                  </label>
+                  <input
+                    id="attendees"
+                    name="attendees"
+                    type="number"
+                    min="1"
+                    value={formValues.attendees}
+                    onChange={handleChange}
+                    className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                    style={{ color: "black" }}
+                    placeholder="120"
+                  />
+                </div>
+
+                {/* Additional Details */}
+                <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
+                  <label
+                    htmlFor="notes"
+                    className="font-medium whitespace-nowrap pt-2"
+                  >
                     Additional Details
                   </label>
                   <textarea
@@ -305,10 +326,10 @@ function ContactUs() {
                     rows="4"
                     value={formValues.notes}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
-                    style={{ color: "black", textAlign: "right" }}
+                    className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                    style={{ color: "black" }}
                     placeholder="Tell us about the event, timeline, or special requests."
-                  ></textarea>
+                  />
                 </div>
 
                 {statusMessage && (
@@ -323,17 +344,19 @@ function ContactUs() {
                   </div>
                 )}
 
-                <div className style={{ color: "black", textAlign: "center" }}>
-                  <button
-                    type="submit"
-                    disabled={!isEmailConfigured || isSending}
-                    className="w-full max-w-md rounded-full bg-[#DFFF00] px-6 py-3 font-semibold text-black transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
-                    style={{ color: "black", textAlign: "center" }}
-                  >
-                    {isSending ? "Sending..." : "Send Booking Request"}
-                  </button>
+                    <div style={{ color: "black", textAlign: "center" }}>
+                      <button
+                        type="submit"
+                        disabled={!isEmailConfigured || isSending}
+                        className="w-full max-w-md rounded-full bg-[#DFFF00] px-6 py-3 font-semibold text-black transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+                        style={{ color: "black", textAlign: "center" }}
+                      >
+                        {isSending ? "Sending..." : "Send Booking Request"}
+                      </button>
+                    </div>
+                  </form>
                 </div>
-              </form>
+              </div>
             </section>
           </div>
         </div>
