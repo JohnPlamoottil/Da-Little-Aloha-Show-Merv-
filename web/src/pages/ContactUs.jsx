@@ -196,7 +196,7 @@ function ContactUs() {
                       value={formValues.name}
                       onChange={handleChange}
                       required
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
                       placeholder="Your name"
                     />
                   </div>
@@ -211,7 +211,7 @@ function ContactUs() {
                       value={formValues.email}
                       onChange={handleChange}
                       required
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
                       placeholder="you@email.com"
                     />
                   </div>
@@ -228,13 +228,13 @@ function ContactUs() {
                       type="tel"
                       value={formValues.phone}
                       onChange={handleChange}
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
                       placeholder="(555) 555-5555"
                     />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label htmlFor="eventDate" className="text-sm font-medium">
-                      Preferred date & time
+                      Preferred Date & Time
                     </label>
                     <input
                       id="eventDate"
@@ -243,7 +243,7 @@ function ContactUs() {
                       value={formValues.eventDate}
                       onChange={handleChange}
                       required
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
                       placeholder="From Calendly selection"
                     />
                   </div>
@@ -255,7 +255,7 @@ function ContactUs() {
                       htmlFor="eventLocation"
                       className="text-sm font-medium"
                     >
-                      Event location
+                      Event Location
                     </label>
                     <input
                       id="eventLocation"
@@ -264,13 +264,14 @@ function ContactUs() {
                       value={formValues.eventLocation}
                       onChange={handleChange}
                       required
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
+                      style={{ color: "black", textAlign: "right" }}
                       placeholder="City / Venue"
                     />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label htmlFor="attendees" className="text-sm font-medium">
-                      Estimated attendees
+                      Estimated Attendees
                     </label>
                     <input
                       id="attendees"
@@ -279,7 +280,8 @@ function ContactUs() {
                       min="1"
                       value={formValues.attendees}
                       onChange={handleChange}
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
+                      style={{ color: "black", textAlign: "right" }}
                       placeholder="120"
                     />
                   </div>
@@ -287,7 +289,7 @@ function ContactUs() {
 
                 <div className="flex flex-col gap-2">
                   <label htmlFor="notes" className="text-sm font-medium">
-                    Additional details
+                    Additional Details
                   </label>
                   <textarea
                     id="notes"
@@ -295,7 +297,8 @@ function ContactUs() {
                     rows="4"
                     value={formValues.notes}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-right text-white placeholder:text-white/40"
+                    className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
+                    style={{ color: "black", textAlign: "right" }}
                     placeholder="Tell us about the event, timeline, or special requests."
                   ></textarea>
                 </div>
@@ -312,14 +315,16 @@ function ContactUs() {
                   </div>
                 )}
 
-                <button
-                  type="submit"
-                  disabled={!isEmailConfigured || isSending}
-                  className="w-full rounded-full bg-[#DFFF00] px-6 py-3 font-semibold text-black transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
-                  style={{ color: "black" }}
-                >
-                  {isSending ? "Sending..." : "Send Booking Request"}
-                </button>
+                <div className style={{ color: "black", textAlign: "center" }}>
+                  <button
+                    type="submit"
+                    disabled={!isEmailConfigured || isSending}
+                    className="w-full max-w-md rounded-full bg-[#DFFF00] px-6 py-3 font-semibold text-black transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+                    style={{ color: "black", textAlign: "center" }}
+                  >
+                    {isSending ? "Sending..." : "Send Booking Request"}
+                  </button>
+                </div>
               </form>
             </section>
           </div>
