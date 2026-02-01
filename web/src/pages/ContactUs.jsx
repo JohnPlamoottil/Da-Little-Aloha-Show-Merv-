@@ -76,7 +76,7 @@ function ContactUs() {
         attendees: "",
         notes: "",
       });
-    } catch (error) {
+    } catch {
       setStatusType("error");
       setStatusMessage(
         "Sorry, we could not send your request. Please try again in a moment.",
@@ -185,10 +185,14 @@ function ContactUs() {
                 style={{ color: "white", textAlign: "left", fontSize: "33px" }}
               >
                 <div className="flex flex-col gap-4 items-end">
-                  <div className="flex w-full flex-col gap-2">
-                    <label htmlFor="name" className="text-sm font-medium">
+                  <div className="grid w-full grid-cols-[240px_minmax(0,1fr)] items-center gap-x-8">
+                    <label
+                      htmlFor="name"
+                      className="text-sm font-medium text-left whitespace-nowrap"
+                    >
                       Full Name
                     </label>
+
                     <input
                       id="name"
                       name="name"
@@ -196,8 +200,8 @@ function ContactUs() {
                       value={formValues.name}
                       onChange={handleChange}
                       required
-                      className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
-                      style={{ color: "black", textAlign: "right" }}
+                      className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
+                      style={{ color: "black" }}
                       placeholder="Your name"
                     />
                   </div>
