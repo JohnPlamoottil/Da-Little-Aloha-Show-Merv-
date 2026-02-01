@@ -521,18 +521,19 @@ body {
   }
 
   .page-content h1 {
-    font-size: 2rem !important;
+    font-size: 1.6rem !important;
     line-height: 1.2 !important;
   }
 
   .page-content h2 {
-    font-size: 1.5rem !important;
+    font-size: 1.25rem !important;
   }
 
   .page-content p,
   .page-content span,
   .page-content label {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.45 !important;
   }
 
   /* Home page */
@@ -541,46 +542,52 @@ body {
   }
 
   .home-page > p {
-    font-size: 1.5rem !important;
+    font-size: 1.15rem !important;
   }
 
   .home-page .inline-flex {
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
     padding: 12px 28px !important;
   }
 
   /* History page */
   .history-page p {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
   }
 
   /* FAQs page */
   .faqs-page h1,
   .faqs-page p {
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
   }
 
   .faqs-page button span {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  .faqs-page .px-6,
+  .faqs-page .px-10 {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 
   /* Contact page */
   .contact-page h1 {
-    font-size: 2rem !important;
+    font-size: 1.6rem !important;
   }
 
   .contact-page h2 {
-    font-size: 1.5rem !important;
+    font-size: 1.25rem !important;
   }
 
   .contact-page p,
   .contact-page label {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
   }
 
   .contact-page input,
   .contact-page textarea {
-    font-size: 0.95rem !important;
+    font-size: 0.9rem !important;
   }
 
   .contact-page .mt-10 {

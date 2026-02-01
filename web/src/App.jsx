@@ -8,8 +8,6 @@ import Gallery from "./pages/Gallery";
 import Shop from "./pages/Shop";
 import HistoryOfDancing from "./pages/HistoryOfDancing";
 import ContactUs from "./pages/ContactUs";
-import USA from "./pages/USA";
-import Philippines from "./pages/Philippines";
 import logo from "./assets/logo.png";
 
 function App() {
@@ -112,8 +110,6 @@ function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path="/history-of-dancing" element={<HistoryOfDancing />} />
             <Route path="/contact-us" element={<ContactUs />} />
-            <Route path="/samoan-hula/usa" element={<USA />} />
-            <Route path="/samoan-hula/philippines" element={<Philippines />} />
           </Routes>
         </main>
 
