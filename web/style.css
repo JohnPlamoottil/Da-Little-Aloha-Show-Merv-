@@ -539,10 +539,16 @@ body {
   /* Home page */
   .home-page {
     transform: none !important;
+    padding-top: 2rem !important;
   }
 
   .home-page > p {
     font-size: 1.15rem !important;
+  }
+
+  .home-page video {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .home-page .inline-flex {
