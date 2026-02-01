@@ -206,7 +206,7 @@ function ContactUs() {
                           onChange={handleChange}
                           required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          placeholder=""
+                          placeholder="First, Middle, Last"
                         />
                       </div>
 
@@ -226,7 +226,7 @@ function ContactUs() {
                           onChange={handleChange}
                           required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          placeholder=""
+                          placeholder="email@gmail.com"
                         />
                       </div>
 
@@ -245,7 +245,7 @@ function ContactUs() {
                           value={formValues.phone}
                           onChange={handleChange}
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          placeholder=""
+                          placeholder="1(area)555-5555"
                         />
                       </div>
 
@@ -265,7 +265,7 @@ function ContactUs() {
                           onChange={handleChange}
                           required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          placeholder=""
+                          placeholder="month/day/year @ time (timezone"
                         />
                       </div>
 
@@ -285,7 +285,7 @@ function ContactUs() {
                           onChange={handleChange}
                           required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          placeholder=""
+                          placeholder="City, State"
                         />
                       </div>
 
@@ -305,7 +305,7 @@ function ContactUs() {
                           value={formValues.attendees}
                           onChange={handleChange}
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          placeholder=""
+                          placeholder="# of Guests"
                         />
                       </div>
 
@@ -315,7 +315,7 @@ function ContactUs() {
                           htmlFor="notes"
                           className="text-sm font-medium text-gray-500 h-5 leading-5"
                         >
-                          Message
+                          Additional Details
                         </label>
                         <textarea
                           id="notes"
