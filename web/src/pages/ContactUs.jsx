@@ -131,15 +131,18 @@ function ContactUs() {
                     Choose an available date in the calendar below.
                   </p>
                 </div>
-                <a
-                  href={calendlyUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-full max-w-md rounded-full bg-[#DFFF00] px-6 py-3 text-center font-semibold text-black transition hover:opacity-90"
-                  style={{ color: "black" }}
-                >
-                  Open Calendly
-                </a>
+                <div style={{ color: "black", textAlign: "center" }}>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      window.open(calendlyUrl, "_blank", "noopener,noreferrer")
+                    }
+                    className="w-full max-w-md rounded-full bg-[#DFFF00] px-6 py-3 font-semibold text-black transition hover:opacity-90"
+                    style={{ color: "black", textAlign: "center" }}
+                  >
+                    Open Calendly
+                  </button>
+                </div>
               </div>
 
               <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-black/40">
