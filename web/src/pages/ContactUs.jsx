@@ -181,11 +181,11 @@ function ContactUs() {
 
               <form
                 onSubmit={handleSubmit}
-                className="mt-6 space-y-4 text-left mx-auto max-w-xl"
+                className="mt-6 space-y-4 text-left ml-auto max-w-md"
                 style={{ color: "white", textAlign: "left", fontSize: "33px" }}
               >
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-4 items-end">
+                  <div className="flex w-full flex-col gap-2">
                     <label htmlFor="name" className="text-sm font-medium">
                       Full Name
                     </label>
@@ -197,10 +197,11 @@ function ContactUs() {
                       onChange={handleChange}
                       required
                       className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
+                      style={{ color: "black", textAlign: "right" }}
                       placeholder="Your name"
                     />
                   </div>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex w-full flex-col gap-2">
                     <label htmlFor="email" className="text-sm font-medium">
                       Email
                     </label>
@@ -212,13 +213,14 @@ function ContactUs() {
                       onChange={handleChange}
                       required
                       className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
+                      style={{ color: "black", textAlign: "right" }}
                       placeholder="you@email.com"
                     />
                   </div>
                 </div>
 
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-4 items-end">
+                  <div className="flex w-full flex-col gap-2">
                     <label htmlFor="phone" className="text-sm font-medium">
                       Phone
                     </label>
@@ -229,10 +231,11 @@ function ContactUs() {
                       value={formValues.phone}
                       onChange={handleChange}
                       className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
+                      style={{ color: "black", textAlign: "right" }}
                       placeholder="(555) 555-5555"
                     />
                   </div>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex w-full flex-col gap-2">
                     <label htmlFor="eventDate" className="text-sm font-medium">
                       Preferred Date & Time
                     </label>
@@ -244,13 +247,14 @@ function ContactUs() {
                       onChange={handleChange}
                       required
                       className="w-full rounded-xl border border-white/10 bg-black/30 pl-6 pr-4 py-3 text-right text-white placeholder:text-white/40"
+                      style={{ color: "black", textAlign: "right" }}
                       placeholder="From Calendly selection"
                     />
                   </div>
                 </div>
 
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-4 items-end">
+                  <div className="flex w-full flex-col gap-2">
                     <label
                       htmlFor="eventLocation"
                       className="text-sm font-medium"
@@ -269,7 +273,7 @@ function ContactUs() {
                       placeholder="City / Venue"
                     />
                   </div>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex w-full flex-col gap-2">
                     <label htmlFor="attendees" className="text-sm font-medium">
                       Estimated Attendees
                     </label>
@@ -287,7 +291,7 @@ function ContactUs() {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 items-end">
                   <label htmlFor="notes" className="text-sm font-medium">
                     Additional Details
                   </label>
