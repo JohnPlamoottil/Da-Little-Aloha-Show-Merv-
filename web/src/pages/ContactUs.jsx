@@ -103,7 +103,7 @@ function ContactUs() {
               style={{ color: "white" }}
             >
               {" "}
-              Book a Show
+              Book a Show RSVP
             </h1>
             <p
               className="mt-4 text-lg text-white/80"
@@ -131,15 +131,15 @@ function ContactUs() {
                     Choose an available date in the calendar below.
                   </p>
                 </div>
-                <a
-                  href={calendlyUrl}
+                <button
+                  href={"https://calendly.com/your-team/da-little-aloha-show"}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-fit rounded-full bg-[#DFFF00] px-5 py-2 text-sm font-semibold text-black transition hover:opacity-90"
-                  style={{ color: "white", fontSize: "33px" }}
+                  className="w-full max-w-md rounded-full bg-[#DFFF00] px-6 py-3 font-semibold text-black transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+                  style={{ color: "black", textAlign: "center" }}
                 >
                   Open Calendly
-                </a>
+                </button>
               </div>
 
               <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-black/40">
