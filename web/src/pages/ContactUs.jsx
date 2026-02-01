@@ -194,9 +194,20 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="name"
-                          className="text-sm font-medium text-gray-500 h-5 leading-5"
+                          className="font-medium h-6 leading-6"
+                          style={{
+                            color: "white",
+                            fontSize: "20px",
+                            textAlign: "left",
+                          }}
                         >
-                          Name *
+                          Name
+                          <span
+                            className="text-red-500 ml-1"
+                            style={{ color: "yellow" }}
+                          >
+                            *
+                          </span>
                         </label>
                         <input
                           id="name"
@@ -204,7 +215,6 @@ function ContactUs() {
                           type="text"
                           value={formValues.name}
                           onChange={handleChange}
-                          required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder="First, Middle, Last"
                         />
@@ -214,9 +224,10 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="email"
-                          className="text-sm font-medium text-gray-500 h-5 leading-5"
+                          className="font-medium text-white text-left text-[20px] h-6 leading-6"
                         >
-                          Email Address *
+                          Email Address
+                          <span className="text-red-500 ml-1">*</span>
                         </label>
                         <input
                           id="email"
@@ -234,7 +245,7 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="phone"
-                          className="text-sm font-medium text-gray-500 h-5 leading-5"
+                          className="font-medium text-white text-left text-[20px] h-6 leading-6"
                         >
                           Phone
                         </label>
@@ -253,9 +264,10 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="eventDate"
-                          className="text-sm font-medium text-gray-500 h-5 leading-5"
+                          className="font-medium text-white text-left text-[20px] h-6 leading-6"
                         >
-                          Preferred Date & Time *
+                          Preferred Date & Time
+                          <span className="text-red-500 ml-1">*</span>
                         </label>
                         <input
                           id="eventDate"
@@ -273,9 +285,10 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="eventLocation"
-                          className="text-sm font-medium text-gray-500 h-5 leading-5"
+                          className="font-medium text-white text-left text-[20px] h-6 leading-6"
                         >
-                          Event Location *
+                          Event Location
+                          <span className="text-red-500 ml-1">*</span>
                         </label>
                         <input
                           id="eventLocation"
@@ -293,7 +306,7 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="attendees"
-                          className="text-sm font-medium text-gray-500 h-5 leading-5"
+                          className="font-medium text-white text-left text-[20px] h-6 leading-6"
                         >
                           Estimated Attendees
                         </label>
@@ -313,7 +326,7 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="notes"
-                          className="text-sm font-medium text-gray-500 h-5 leading-5"
+                          className="font-medium text-white text-left text-[20px] h-6 leading-6"
                         >
                           Additional Details
                         </label>
