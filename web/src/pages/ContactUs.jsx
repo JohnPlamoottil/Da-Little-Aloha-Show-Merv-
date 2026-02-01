@@ -151,6 +151,7 @@ function ContactUs() {
                   src={calendarFeb2026}
                   alt="February 2026 calendar"
                   className="w-full h-auto"
+                  style={{ width: "590px", paddingTop: "23px" }}
                 />
               </div>
 
