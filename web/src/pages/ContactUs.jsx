@@ -185,179 +185,176 @@ function ContactUs() {
                     </div>
                   )}
 
-                  <form
-                    onSubmit={handleSubmit}
-                    className="mt-6 space-y-6 text-left max-w-3xl mx-auto"
-                    style={{ color: "white" }}
-                  >
-                    {/* Full Name */}
-                    <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
-                      <label
-                        htmlFor="name"
-                        className="font-medium text-[28px] whitespace-nowrap"
-                      >
-                        Full Name
-                      </label>
-                      <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        value={formValues.name}
-                        onChange={handleChange}
-                        required
-                        className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
-                        style={{ color: "black" }}
-                        placeholder="Your name"
-                      />
-                    </div>
-
-                    {/* Email */}
-                    <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
-                      <label
-                        htmlFor="email"
-                        className="font-medium whitespace-nowrap"
-                      >
-                        Email
-                      </label>
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formValues.email}
-                        onChange={handleChange}
-                        required
-                        className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
-                        style={{ color: "black" }}
-                        placeholder="you@email.com"
-                      />
-                    </div>
-
-                    {/* Phone */}
-                    <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
-                      <label
-                        htmlFor="phone"
-                        className="font-medium whitespace-nowrap"
-                      >
-                        Phone
-                      </label>
-                      <input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formValues.phone}
-                        onChange={handleChange}
-                        className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
-                        style={{ color: "black" }}
-                        placeholder="(555) 555-5555"
-                      />
-                    </div>
-
-                    {/* Preferred Date & Time */}
-                    <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
-                      <label
-                        htmlFor="eventDate"
-                        className="font-medium whitespace-nowrap"
-                      >
-                        Preferred Date & Time
-                      </label>
-                      <input
-                        id="eventDate"
-                        name="eventDate"
-                        type="text"
-                        value={formValues.eventDate}
-                        onChange={handleChange}
-                        required
-                        className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
-                        style={{ color: "black" }}
-                        placeholder="From Calendly selection"
-                      />
-                    </div>
-
-                    {/* Event Location */}
-                    <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
-                      <label
-                        htmlFor="eventLocation"
-                        className="font-medium whitespace-nowrap"
-                      >
-                        Event Location
-                      </label>
-                      <input
-                        id="eventLocation"
-                        name="eventLocation"
-                        type="text"
-                        value={formValues.eventLocation}
-                        onChange={handleChange}
-                        required
-                        className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
-                        style={{ color: "black" }}
-                        placeholder="City / Venue"
-                      />
-                    </div>
-
-                    {/* Estimated Attendees */}
-                    <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
-                      <label
-                        htmlFor="attendees"
-                        className="font-medium whitespace-nowrap"
-                      >
-                        Estimated Attendees
-                      </label>
-                      <input
-                        id="attendees"
-                        name="attendees"
-                        type="number"
-                        min="1"
-                        value={formValues.attendees}
-                        onChange={handleChange}
-                        className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
-                        style={{ color: "black" }}
-                        placeholder="120"
-                      />
-                    </div>
-
-                    {/* Additional Details */}
-                    <div className="grid w-full grid-cols-[320px_minmax(0,1fr)]">
-                      <label
-                        htmlFor="notes"
-                        className="font-medium whitespace-nowrap pt-2"
-                      >
-                        Additional Details
-                      </label>
-                      <textarea
-                        id="notes"
-                        name="notes"
-                        rows="4"
-                        value={formValues.notes}
-                        onChange={handleChange}
-                        className="w-full min-w-0 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-white/40"
-                        style={{ color: "black" }}
-                        placeholder="Tell us about the event, timeline, or special requests."
-                      />
-                    </div>
-
-                    {statusMessage && (
-                      <div
-                        className={`rounded-2xl border p-3 text-sm ${
-                          statusType === "success"
-                            ? "border-emerald-400/60 bg-emerald-500/10 text-emerald-100"
-                            : "border-red-400/60 bg-red-500/10 text-red-100"
-                        }`}
-                      >
-                        {statusMessage}
+                  <div className="mt-6 rounded-3xl bg-white/95 p-8 text-gray-700 shadow-lg">
+                    <form
+                      onSubmit={handleSubmit}
+                      className="grid gap-8 text-left md:grid-cols-2"
+                    >
+                      {/* Full Name */}
+                      <div className="flex flex-col gap-2">
+                        <label
+                          htmlFor="name"
+                          className="text-sm font-medium text-gray-500"
+                        >
+                          Name *
+                        </label>
+                        <input
+                          id="name"
+                          name="name"
+                          type="text"
+                          value={formValues.name}
+                          onChange={handleChange}
+                          required
+                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          placeholder=""
+                        />
                       </div>
-                    )}
 
-                    <div style={{ color: "black", textAlign: "center" }}>
-                      <button
-                        type="submit"
-                        disabled={!isEmailConfigured || isSending}
-                        className="w-full max-w-md rounded-full bg-[#DFFF00] px-6 py-3 font-semibold text-black transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+                      {/* Email */}
+                      <div className="flex flex-col gap-2">
+                        <label
+                          htmlFor="email"
+                          className="text-sm font-medium text-gray-500"
+                        >
+                          Email Address *
+                        </label>
+                        <input
+                          id="email"
+                          name="email"
+                          type="email"
+                          value={formValues.email}
+                          onChange={handleChange}
+                          required
+                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          placeholder=""
+                        />
+                      </div>
+
+                      {/* Phone */}
+                      <div className="flex flex-col gap-2">
+                        <label
+                          htmlFor="phone"
+                          className="text-sm font-medium text-gray-500"
+                        >
+                          Phone
+                        </label>
+                        <input
+                          id="phone"
+                          name="phone"
+                          type="tel"
+                          value={formValues.phone}
+                          onChange={handleChange}
+                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          placeholder=""
+                        />
+                      </div>
+
+                      {/* Preferred Date & Time */}
+                      <div className="flex flex-col gap-2">
+                        <label
+                          htmlFor="eventDate"
+                          className="text-sm font-medium text-gray-500"
+                        >
+                          Preferred Date & Time *
+                        </label>
+                        <input
+                          id="eventDate"
+                          name="eventDate"
+                          type="text"
+                          value={formValues.eventDate}
+                          onChange={handleChange}
+                          required
+                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          placeholder=""
+                        />
+                      </div>
+
+                      {/* Event Location */}
+                      <div className="flex flex-col gap-2">
+                        <label
+                          htmlFor="eventLocation"
+                          className="text-sm font-medium text-gray-500"
+                        >
+                          Event Location *
+                        </label>
+                        <input
+                          id="eventLocation"
+                          name="eventLocation"
+                          type="text"
+                          value={formValues.eventLocation}
+                          onChange={handleChange}
+                          required
+                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          placeholder=""
+                        />
+                      </div>
+
+                      {/* Estimated Attendees */}
+                      <div className="flex flex-col gap-2">
+                        <label
+                          htmlFor="attendees"
+                          className="text-sm font-medium text-gray-500"
+                        >
+                          Estimated Attendees
+                        </label>
+                        <input
+                          id="attendees"
+                          name="attendees"
+                          type="number"
+                          min="1"
+                          value={formValues.attendees}
+                          onChange={handleChange}
+                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          placeholder=""
+                        />
+                      </div>
+
+                      {/* Additional Details */}
+                      <div className="flex flex-col gap-2 md:col-span-2">
+                        <label
+                          htmlFor="notes"
+                          className="text-sm font-medium text-gray-500"
+                        >
+                          Message
+                        </label>
+                        <textarea
+                          id="notes"
+                          name="notes"
+                          rows="5"
+                          value={formValues.notes}
+                          onChange={handleChange}
+                          className="w-full rounded-md border border-gray-300 bg-white px-3 py-3 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          placeholder="How can we help you? Feel free to get in touch!"
+                        />
+                      </div>
+
+                      {statusMessage && (
+                        <div
+                          className={`rounded-2xl border p-3 text-sm md:col-span-2 ${
+                            statusType === "success"
+                              ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-700"
+                              : "border-red-500/40 bg-red-500/10 text-red-700"
+                          }`}
+                        >
+                          {statusMessage}
+                        </div>
+                      )}
+
+                      <div
+                        className="md:col-span-2"
                         style={{ color: "black", textAlign: "center" }}
                       >
-                        {isSending ? "Sending..." : "Send Booking Request"}
-                      </button>
-                    </div>
-                  </form>
+                        <button
+                          type="submit"
+                          disabled={!isEmailConfigured || isSending}
+                          className="w-full max-w-md rounded-full bg-[#DFFF00] px-6 py-3 font-semibold text-black transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+                          style={{ color: "black", textAlign: "center" }}
+                        >
+                          {isSending ? "Sending..." : "Send Booking Request"}
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </section>
