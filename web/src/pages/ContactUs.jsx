@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import contactUsBackground from "../assets/contactus_background.jpg";
+import calendarFeb2026 from "../assets/calendar_feb_2026.svg";
 
 function ContactUs() {
   const calendlyUrl =
@@ -145,14 +146,22 @@ function ContactUs() {
                 </div>
               </div>
 
+              <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-white/90">
+                <img
+                  src={calendarFeb2026}
+                  alt="February 2026 calendar"
+                  className="w-full h-auto"
+                />
+              </div>
+
               <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-black/40">
-                <iframe
+                {/* <iframe
                   title="Calendly booking"
                   src={calendlyUrl}
                   className="h-[640px] w-full"
                   frameBorder="0"
                   allow="autoplay; fullscreen"
-                ></iframe>
+                ></iframe> */}
               </div>
             </section>
 
@@ -216,7 +225,8 @@ function ContactUs() {
                           value={formValues.name}
                           onChange={handleChange}
                           required
-                          className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          className="w-full h-12 border-b border-gray-800 bg-transparent px-0 py-2 text-gray-900 placeholder:text-gray-400 focus:border-gray-800 focus:outline-none"
+                          style={{ textAlign: "right", padding: "0 0 0 45px" }}
                           placeholder="First, Middle, Last"
                         />
                       </div>
@@ -226,9 +236,19 @@ function ContactUs() {
                         <label
                           htmlFor="email"
                           className="font-medium text-white text-left text-[20px] h-6 leading-6"
+                          style={{
+                            color: "white",
+                            fontSize: "20px",
+                            textAlign: "left",
+                          }}
                         >
                           Email Address
-                          <span className="text-red-500 ml-1">*</span>
+                          <span
+                            className="text-red-500 ml-1"
+                            style={{ color: "yellow" }}
+                          >
+                            *
+                          </span>
                         </label>
                         <input
                           id="email"
@@ -238,6 +258,7 @@ function ContactUs() {
                           onChange={handleChange}
                           required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          style={{ textAlign: "right", padding: "0 0 0 45px" }}
                           placeholder="email@gmail.com"
                         />
                       </div>
@@ -247,8 +268,19 @@ function ContactUs() {
                         <label
                           htmlFor="phone"
                           className="font-medium text-white text-left text-[20px] h-6 leading-6"
+                          style={{
+                            color: "white",
+                            fontSize: "20px",
+                            textAlign: "left",
+                          }}
                         >
                           Phone
+                          <span
+                            className="text-red-500 ml-1"
+                            style={{ color: "yellow" }}
+                          >
+                            *
+                          </span>
                         </label>
                         <input
                           id="phone"
@@ -266,9 +298,19 @@ function ContactUs() {
                         <label
                           htmlFor="eventDate"
                           className="font-medium text-white text-left text-[20px] h-6 leading-6"
+                          style={{
+                            color: "white",
+                            fontSize: "20px",
+                            textAlign: "left",
+                          }}
                         >
                           Preferred Date & Time
-                          <span className="text-red-500 ml-1">*</span>
+                          <span
+                            className="text-red-500 ml-1"
+                            style={{ color: "yellow" }}
+                          >
+                            *
+                          </span>
                         </label>
                         <input
                           id="eventDate"
@@ -287,9 +329,19 @@ function ContactUs() {
                         <label
                           htmlFor="eventLocation"
                           className="font-medium text-white text-left text-[20px] h-6 leading-6"
+                          style={{
+                            color: "white",
+                            fontSize: "20px",
+                            textAlign: "left",
+                          }}
                         >
                           Event Location
-                          <span className="text-red-500 ml-1">*</span>
+                          <span
+                            className="text-red-500 ml-1"
+                            style={{ color: "yellow" }}
+                          >
+                            *
+                          </span>
                         </label>
                         <input
                           id="eventLocation"
@@ -308,8 +360,19 @@ function ContactUs() {
                         <label
                           htmlFor="attendees"
                           className="font-medium text-white text-left text-[20px] h-6 leading-6"
+                          style={{
+                            color: "white",
+                            fontSize: "20px",
+                            textAlign: "left",
+                          }}
                         >
                           Estimated Attendees
+                          <span
+                            className="text-red-500 ml-1"
+                            style={{ color: "yellow" }}
+                          >
+                            *
+                          </span>
                         </label>
                         <input
                           id="attendees"
@@ -318,27 +381,44 @@ function ContactUs() {
                           min="1"
                           value={formValues.attendees}
                           onChange={handleChange}
+                          required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder="# of Guests"
                         />
                       </div>
 
                       {/* Additional Details */}
-                      <div className="flex flex-col gap-2">
+                      <div
+                        className="flex flex-col gap-2"
+                        style={{ flexDirection: "column" }}
+                      >
                         <label
                           htmlFor="notes"
                           className="font-medium text-white text-left text-[20px] h-6 leading-6"
+                          style={{
+                            color: "white",
+                            fontSize: "20px",
+                            textAlign: "left",
+                          }}
                         >
                           Additional Details
+                          <span
+                            className="text-red-500 ml-1"
+                            style={{ color: "yellow" }}
+                          >
+                            *
+                          </span>
                         </label>
                         <textarea
                           id="notes"
                           name="notes"
-                          rows="5"
+                          rows="1"
                           value={formValues.notes}
                           onChange={handleChange}
+                          required
                           className="w-full rounded-md border border-gray-300 bg-white px-3 py-3 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder="Tell us about the event and/or any special requests"
+                          style={{ textAlign: "56pxs" }}
                         />
                       </div>
 
