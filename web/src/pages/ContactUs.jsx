@@ -107,7 +107,7 @@ function ContactUs() {
             </h1>
             <p
               className="mt-4 text-lg text-white/80"
-              style={{ color: "white" }}
+              style={{ color: "white", fontSize: "33px" }}
             >
               View our available dates, select a time, and send your booking
               request to the team.
@@ -126,7 +126,7 @@ function ContactUs() {
                   </h2>
                   <p
                     className="mt-2 text-sm text-white/70"
-                    style={{ color: "white" }}
+                    style={{ color: "white", fontSize: "33px" }}
                   >
                     Choose an available date in the calendar below.
                   </p>
@@ -136,7 +136,7 @@ function ContactUs() {
                   target="_blank"
                   rel="noreferrer"
                   className="w-fit rounded-full bg-[#DFFF00] px-5 py-2 text-sm font-semibold text-black transition hover:opacity-90"
-                  style={{ color: "white" }}
+                  style={{ color: "white", fontSize: "33px" }}
                 >
                   Open Calendly
                 </a>
@@ -161,7 +161,10 @@ function ContactUs() {
                 >
                   Send a Booking Request
                 </h2>
-                <p className="text-sm text-white/70" style={{ color: "white" }}>
+                <p
+                  className="text-sm text-white/70"
+                  style={{ color: "white", fontSize: "33px" }}
+                >
                   After selecting your preferred time, submit the form so we can
                   confirm details.
                 </p>
@@ -170,13 +173,16 @@ function ContactUs() {
               {!isEmailConfigured && (
                 <div
                   className="mt-4 rounded-2xl border border-yellow-400/60 bg-yellow-500/10 p-4 text-sm text-yellow-200"
-                  style={{ color: "white" }}
+                  style={{ color: "yellow", fontSize: "83px" }}
                 >
                   EmailJS is not configured.
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+              <form
+                onSubmit={handleSubmit}
+                className="mt-6 space-y-4 text-left mx-auto max-w-xl"
+              >
                 <div
                   className="grid gap-4 sm:grid-cols-2"
                   style={{ color: "white" }}
