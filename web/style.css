@@ -350,6 +350,102 @@ body {
 
 /* Tablet - 768px */
 @media (max-width: 768px) {
+  /* Page content adjustments */
+  .page-content {
+    padding: 1.5rem;
+  }
+
+  .page-content h1 {
+    font-size: 2.75rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .page-content h2 {
+    font-size: 2rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .page-content p,
+  .page-content span,
+  .page-content label {
+    font-size: 1.25rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .page-content video,
+  .page-content img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Home page */
+  .home-page > p {
+    font-size: 2rem !important;
+  }
+
+  .home-page .inline-flex {
+    font-size: 2rem !important;
+    padding: 16px 40px !important;
+  }
+
+  /* History page */
+  .history-page p {
+    font-size: 1.25rem !important;
+  }
+
+  /* FAQs page */
+  .faqs-page h1,
+  .faqs-page p {
+    font-size: 2rem !important;
+  }
+
+  .faqs-page button span {
+    font-size: 1.25rem !important;
+  }
+
+  .faqs-page .px-6,
+  .faqs-page .px-10 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Contact page */
+  .contact-page h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .contact-page h2 {
+    font-size: 2rem !important;
+  }
+
+  .contact-page p,
+  .contact-page label {
+    font-size: 1.25rem !important;
+  }
+
+  .contact-page input,
+  .contact-page textarea {
+    padding: 0 !important;
+    text-align: left !important;
+    font-size: 1rem !important;
+  }
+
+  .contact-page .rounded-3xl,
+  .contact-page .rounded-2xl {
+    border-radius: 1.5rem !important;
+  }
+
+  /* About page */
+  .about-page .about-poster {
+    width: 90% !important;
+    top: 6% !important;
+  }
+
+  .about-page .about-action {
+    width: 55% !important;
+    top: 62% !important;
+  }
+
   /* Header adjustments */
   .logo img {
     width: 100px;
@@ -415,6 +511,91 @@ body {
 
   .footer {
     padding: 40px 15px 20px;
+  }
+}
+
+/* Mobile - 440px */
+@media (max-width: 440px) {
+  .page-content {
+    padding: 1rem;
+  }
+
+  .page-content h1 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .page-content h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .page-content p,
+  .page-content span,
+  .page-content label {
+    font-size: 1rem !important;
+  }
+
+  /* Home page */
+  .home-page {
+    transform: none !important;
+  }
+
+  .home-page > p {
+    font-size: 1.5rem !important;
+  }
+
+  .home-page .inline-flex {
+    font-size: 1.5rem !important;
+    padding: 12px 28px !important;
+  }
+
+  /* History page */
+  .history-page p {
+    font-size: 1rem !important;
+  }
+
+  /* FAQs page */
+  .faqs-page h1,
+  .faqs-page p {
+    font-size: 1.5rem !important;
+  }
+
+  .faqs-page button span {
+    font-size: 1rem !important;
+  }
+
+  /* Contact page */
+  .contact-page h1 {
+    font-size: 2rem !important;
+  }
+
+  .contact-page h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-page p,
+  .contact-page label {
+    font-size: 1rem !important;
+  }
+
+  .contact-page input,
+  .contact-page textarea {
+    font-size: 0.95rem !important;
+  }
+
+  .contact-page .mt-10 {
+    margin-top: 1.5rem !important;
+  }
+
+  /* About page */
+  .about-page .about-poster {
+    width: 95% !important;
+    top: 4% !important;
+  }
+
+  .about-page .about-action {
+    width: 70% !important;
+    top: 64% !important;
   }
 }
 

@@ -5,7 +5,7 @@ import mervActionPose from "../assets/merv_actionpose.JPG";
 
 function AboutUs() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen about-page">
       <div
         className="page-content text-white"
         style={{
@@ -26,12 +26,12 @@ function AboutUs() {
           <img
             src={aboutBackground}
             alt="About page background"
-            className="w-full rounded-lg shadow-lg block"
+            className="about-background w-full rounded-lg shadow-lg block"
           />
           <img
             src={alohaPoster}
             alt="Aloha poster"
-            className="rounded-lg shadow-lg"
+            className="about-poster rounded-lg shadow-lg"
             style={{
               position: "absolute",
               top: "8%",
@@ -45,7 +45,7 @@ function AboutUs() {
           <img
             src={mervActionPose}
             alt="Merv action pose"
-            className="rounded-lg shadow-lg"
+            className="about-action rounded-lg shadow-lg"
             style={{
               position: "absolute",
               top: "58%",

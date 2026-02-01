@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div
-      className="page-content flex flex-col items-center justify-center"
+      className="page-content home-page flex flex-col items-center justify-center"
       style={{
         minHeight: "calc(100vh - 120px)",
         transform: "translateY(-20px)",

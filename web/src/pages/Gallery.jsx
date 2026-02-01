@@ -4,7 +4,7 @@ import galleryBackground from "../assets/gallery_background.jpg";
 function Gallery() {
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-fixed bg-no-repeat"
+      className="min-h-screen gallery-page bg-cover bg-center bg-fixed bg-no-repeat"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${galleryBackground})`,
       }}

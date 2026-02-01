@@ -38,7 +38,7 @@ function FAQs() {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-fixed bg-no-repeat flex items-center justify-center py-20"
+      className="min-h-screen faqs-page bg-cover bg-center bg-fixed bg-no-repeat flex items-center justify-center py-20"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${faqBackground})`,
         paddingTop: "120px",

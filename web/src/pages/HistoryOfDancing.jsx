@@ -2,7 +2,10 @@ import React from "react";
 
 function HistoryOfDancing() {
   return (
-    <div className="page-content" style={{ color: "white", fontSize: "10px" }}>
+    <div
+      className="page-content history-page"
+      style={{ color: "white", fontSize: "10px" }}
+    >
       <h1>History of Dancing</h1>
       <p style={{ color: "white", fontSize: "45px", textAlign: "center" }}>
         Discover the rich history of traditional Hawaiian and Samoan dance.
