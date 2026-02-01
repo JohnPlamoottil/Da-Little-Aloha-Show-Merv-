@@ -194,7 +194,7 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="name"
-                          className="text-sm font-medium text-gray-500"
+                          className="text-sm font-medium text-gray-500 h-5 leading-5"
                         >
                           Name *
                         </label>
@@ -205,7 +205,7 @@ function ContactUs() {
                           value={formValues.name}
                           onChange={handleChange}
                           required
-                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder=""
                         />
                       </div>
@@ -214,7 +214,7 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="email"
-                          className="text-sm font-medium text-gray-500"
+                          className="text-sm font-medium text-gray-500 h-5 leading-5"
                         >
                           Email Address *
                         </label>
@@ -225,7 +225,7 @@ function ContactUs() {
                           value={formValues.email}
                           onChange={handleChange}
                           required
-                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder=""
                         />
                       </div>
@@ -234,7 +234,7 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="phone"
-                          className="text-sm font-medium text-gray-500"
+                          className="text-sm font-medium text-gray-500 h-5 leading-5"
                         >
                           Phone
                         </label>
@@ -244,7 +244,7 @@ function ContactUs() {
                           type="tel"
                           value={formValues.phone}
                           onChange={handleChange}
-                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder=""
                         />
                       </div>
@@ -253,7 +253,7 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="eventDate"
-                          className="text-sm font-medium text-gray-500"
+                          className="text-sm font-medium text-gray-500 h-5 leading-5"
                         >
                           Preferred Date & Time *
                         </label>
@@ -264,7 +264,7 @@ function ContactUs() {
                           value={formValues.eventDate}
                           onChange={handleChange}
                           required
-                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder=""
                         />
                       </div>
@@ -273,7 +273,7 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="eventLocation"
-                          className="text-sm font-medium text-gray-500"
+                          className="text-sm font-medium text-gray-500 h-5 leading-5"
                         >
                           Event Location *
                         </label>
@@ -284,7 +284,7 @@ function ContactUs() {
                           value={formValues.eventLocation}
                           onChange={handleChange}
                           required
-                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder=""
                         />
                       </div>
@@ -293,7 +293,7 @@ function ContactUs() {
                       <div className="flex flex-col gap-2">
                         <label
                           htmlFor="attendees"
-                          className="text-sm font-medium text-gray-500"
+                          className="text-sm font-medium text-gray-500 h-5 leading-5"
                         >
                           Estimated Attendees
                         </label>
@@ -304,7 +304,7 @@ function ContactUs() {
                           min="1"
                           value={formValues.attendees}
                           onChange={handleChange}
-                          className="w-full border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
+                          className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder=""
                         />
                       </div>
@@ -313,7 +313,7 @@ function ContactUs() {
                       <div className="flex flex-col gap-2 md:col-span-2">
                         <label
                           htmlFor="notes"
-                          className="text-sm font-medium text-gray-500"
+                          className="text-sm font-medium text-gray-500 h-5 leading-5"
                         >
                           Message
                         </label>
@@ -324,7 +324,7 @@ function ContactUs() {
                           value={formValues.notes}
                           onChange={handleChange}
                           className="w-full rounded-md border border-gray-300 bg-white px-3 py-3 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
-                          placeholder="How can we help you? Feel free to get in touch!"
+                          placeholder="Tell us about the event and/or any special requests"
                         />
                       </div>
 
