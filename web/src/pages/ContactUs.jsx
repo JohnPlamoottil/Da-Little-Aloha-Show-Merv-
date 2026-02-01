@@ -215,6 +215,7 @@ function ContactUs() {
                           type="text"
                           value={formValues.name}
                           onChange={handleChange}
+                          required
                           className="w-full h-10 border-b border-gray-300 bg-transparent px-0 py-2 text-gray-700 placeholder:text-gray-400 focus:border-gray-600 focus:outline-none"
                           placeholder="First, Middle, Last"
                         />
