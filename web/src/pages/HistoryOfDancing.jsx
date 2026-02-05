@@ -11,12 +11,12 @@ function HistoryOfDancing() {
         Discover the rich history of traditional Hawaiian and Samoan dance.
       </p>
 
-      <video
+      {/* <video
         src="https://res.cloudinary.com/ds1fxskme/video/upload/v1769822347/Telling_Warrior_Stories_with_Hula_rbz6fn.mp4"
         controls
         className="w-full"
         style={{ maxWidth: "900px", margin: "0 auto", display: "block" }}
-      />
+      /> */}
 
       <p style={{ color: "white", fontSize: "35px", textAlign: "center" }}>
         A common misconception about hula is that it's a dance tradition
