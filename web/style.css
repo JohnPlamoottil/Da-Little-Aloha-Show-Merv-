@@ -965,3 +965,120 @@ body {
     flex-direction: row;
   }
 }
+
+/* iPhone 15 Pro - 393px */
+@media (max-width: 393px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .page-content {
+    padding: 0.85rem;
+  }
+
+  .page-content h1 {
+    font-size: 1.45rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .page-content h2 {
+    font-size: 1.15rem !important;
+  }
+
+  .page-content p,
+  .page-content span,
+  .page-content label {
+    font-size: 0.9rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .nav-container {
+    padding: 12px;
+  }
+
+  .logo img {
+    width: 44px;
+  }
+
+  .nav-menu li a {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .hero {
+    padding-top: 90px;
+  }
+
+  .title h1 {
+    font-size: 1.9rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .button {
+    gap: 10px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 10px 16px;
+    max-width: 280px;
+  }
+
+  .home-page > p {
+    font-size: 1.05rem !important;
+  }
+
+  .home-page .inline-flex {
+    font-size: 1.05rem !important;
+    padding: 10px 24px !important;
+  }
+
+  .history-page p {
+    font-size: 0.9rem !important;
+  }
+
+  .faqs-page h1,
+  .faqs-page p {
+    font-size: 1.05rem !important;
+  }
+
+  .faqs-page button span {
+    font-size: 0.9rem !important;
+  }
+
+  .contact-page h1 {
+    font-size: 1.45rem !important;
+  }
+
+  .contact-page h2 {
+    font-size: 1.15rem !important;
+  }
+
+  .contact-page p,
+  .contact-page label {
+    font-size: 0.9rem !important;
+  }
+
+  .contact-page input,
+  .contact-page textarea {
+    font-size: 0.85rem !important;
+  }
+
+  .about-page .about-poster {
+    width: 98% !important;
+    top: 3% !important;
+  }
+
+  .about-page .about-action {
+    width: 72% !important;
+    top: 64% !important;
+  }
+
+  .footer {
+    padding: 25px 12px 12px;
+  }
+
+  .footer-logo img {
+    width: 110px;
+  }
+}
