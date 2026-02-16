@@ -120,8 +120,10 @@ body {
 /* Hero Section */
 .hero {
   background: transparent;
-  min-height: 44vh;
-  padding-top: 66px;
+  min-height: 34vh;
+  padding-top: 61px;
+  display: flex;
+  place-items: center;
 }
 
 .title {
