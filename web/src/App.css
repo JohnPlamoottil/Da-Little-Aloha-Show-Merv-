@@ -85,30 +85,38 @@ main {
     margin-top: -21.01rem;
     margin-bottom: 1rem;
   }
-
-  .about-image-strip {
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    padding: 1rem 0;
-  }
-
-  .about-image-strip .about-action {
-    position: static !important;
-    width: 220px !important;
-    max-width: none !important;
-    height: auto !important;
-    flex: 0 0 auto;
-  }
 }
 
 @media (max-width: 480px) {
   .about-image-strip {
+    display: flex;
     gap: 0.75rem;
+    overflow-x: auto;
     padding: 0.75rem 0;
+    scrollbar-gutter: stable;
+    scrollbar-color: rgba(255, 255, 255, 0.6) rgba(255, 255, 255, 0.2);
+    scrollbar-width: thin;
+  }
+
+  .about-image-strip::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .about-image-strip::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+  }
+
+  .about-image-strip::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 999px;
   }
 
   .about-image-strip .about-action {
+    position: static !important;
     width: 180px !important;
+    max-width: none !important;
+    height: auto !important;
+    flex: 0 0 auto;
   }
 }
