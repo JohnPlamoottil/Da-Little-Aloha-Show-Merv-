@@ -6,6 +6,10 @@ const alohaPosterUrl =
   "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267905/Aloha_poster_1_ddqht2.png";
 const mervActionPoseUrl =
   "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267905/merv_actionpose_sh5wbe.jpg";
+const mervBioUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1769898856/merv_bio_kd4jou.jpg";
+const mervOutsideUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1769898868/merv_outside_luat4u.jpg";
 
 function AboutUs() {
   return (
@@ -25,12 +29,38 @@ function AboutUs() {
           Learn more about Da Little Aloha Show and Our Mission.
         </p>
         <img
+          src={mervBioUrl}
+          alt="Merv bio"
+          className="about-action rounded-lg shadow-lg"
+          style={{
+            position: "absolute",
+            top: "34rem",
+            left: "-21%",
+            width: "93%",
+            maxWidth: "260px",
+            zIndex: 20,
+          }}
+        />
+        <img
           src={mervActionPoseUrl}
           alt="Merv action pose"
           className="about-action rounded-lg shadow-lg"
           style={{
             position: "absolute",
-            top: "34rem",
+            top: "64rem",
+            left: "-21%",
+            width: "93%",
+            maxWidth: "260px",
+            zIndex: 20,
+          }}
+        />
+        <img
+          src={mervOutsideUrl}
+          alt="Merv outside"
+          className="about-action rounded-lg shadow-lg"
+          style={{
+            position: "absolute",
+            top: "94rem",
             left: "-21%",
             width: "93%",
             maxWidth: "260px",
