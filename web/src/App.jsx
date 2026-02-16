@@ -45,7 +45,7 @@ function App() {
             </button>
 
             <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
-              <li className="active">
+              <li>
                 <Link to="/" onClick={closeMenu}>
                   HOME
                 </Link>

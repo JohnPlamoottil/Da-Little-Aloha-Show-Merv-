@@ -16,6 +16,15 @@
   z-index: 1000;
 }
 
+.nav-menu a {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-menu a:hover {
+  border-bottom-color: currentColor;
+}
+
 main {
   /* min-height: 50vh;
   padding: 2rem; */
@@ -28,6 +37,11 @@ main {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.hero .title h1 {
+  margin-top: -13.01rem;
+  margin-bottom: 1rem;
 }
 
 .logo {
