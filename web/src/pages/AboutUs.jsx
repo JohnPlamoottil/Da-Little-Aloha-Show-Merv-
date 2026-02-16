@@ -11,6 +11,7 @@ function AboutUs() {
         style={{
           color: "#ffffff",
           paddingTop: "0.75rem",
+          position: "relative",
           transform: "scale(0.9)",
           transformOrigin: "top center",
         }}
@@ -19,6 +20,19 @@ function AboutUs() {
         <p className="text-xl" style={{ fontSize: "45px" }}>
           Learn more about Da Little Aloha Show and Our Mission.
         </p>
+        <img
+          src={mervActionPose}
+          alt="Merv action pose"
+          className="about-action rounded-lg shadow-lg"
+          style={{
+            position: "absolute",
+            top: "0.5rem",
+            left: "0.5rem",
+            width: "18%",
+            maxWidth: "260px",
+            zIndex: 20,
+          }}
+        />
         <div
           className="mt-4 w-full max-w-5xl mx-auto"
           style={{ position: "relative" }}
@@ -78,20 +92,6 @@ function AboutUs() {
             custom Photo Booth experience & DeeJay Entertainment with an Emcee
             to facilitate your next event! Mahalo Nui Loa!
           </p>
-          <img
-            src={mervActionPose}
-            alt="Merv action pose"
-            className="about-action rounded-lg shadow-lg"
-            style={{
-              position: "absolute",
-              top: "4%",
-              left: "4%",
-              transform: "none",
-              width: "25%",
-              maxWidth: "900px",
-              zIndex: 8,
-            }}
-          />
         </div>
       </div>
     </div>
