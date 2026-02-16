@@ -33,6 +33,19 @@ function AboutUs() {
             zIndex: 20,
           }}
         />
+        <img
+          src={mervActionPose}
+          alt="Merv action pose"
+          className="about-action rounded-lg shadow-lg"
+          style={{
+            position: "absolute",
+            top: "34rem",
+            left: "-21%",
+            width: "93%",
+            maxWidth: "260px",
+            zIndex: 20,
+          }}
+        />
         <div
           className="mt-4 w-full max-w-5xl mx-auto"
           style={{ position: "relative" }}
@@ -60,13 +73,13 @@ function AboutUs() {
           <p
             style={{
               position: "absolute",
-              top: "66%",
+              top: "62%",
               left: "50%",
               transform: "translate(-50%, -50%)",
               width: "85%",
               maxWidth: "1100px",
               fontSize: "31px",
-              lineHeight: "1.3",
+              lineHeight: "1.6",
               padding: "0 1.5rem",
               textAlign: "center",
               zIndex: 9,
