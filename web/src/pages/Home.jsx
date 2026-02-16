@@ -1,16 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const logoUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267911/logo_mbimde.png";
+const homeBackgroundUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267905/homepage_background_pjsqiq.jpg";
+
 function Home() {
   return (
     <div
       className="page-content home-page flex flex-col items-center justify-center"
       style={{
-        minHeight: "calc(100vh - 120px)",
-        transform: "translateY(-20px)",
+        minHeight: "100vh",
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${homeBackgroundUrl})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <h1></h1>
+      <img
+        src={logoUrl}
+        alt="Da Little Aloha Show logo"
+        className="mb-6 w-full max-w-md"
+      />
       <p
         className="text-center text-white"
         style={{ size: "555px", color: "#ffffff", fontSize: "56px" }}
