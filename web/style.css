@@ -581,6 +581,15 @@ body {
     height: auto !important;
   }
 
+  .home-page video {
+    display: block;
+    margin-left: -3%;
+    margin-right: 8%;
+    max-width: 92% !important;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
   .nav-container {
     flex-wrap: wrap;
     padding: 15px;
@@ -633,7 +642,7 @@ body {
   }
 
   .title {
-    top: 38%;
+    top: 46%;
     width: 100%;
   }
 
