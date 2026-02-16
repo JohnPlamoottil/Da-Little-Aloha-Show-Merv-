@@ -84,10 +84,10 @@ function AboutUs() {
             className="about-action rounded-lg shadow-lg"
             style={{
               position: "absolute",
-              top: "88%",
-              left: "50%",
-              transform: "translateX(-50%)",
-              width: "35%",
+              top: "4%",
+              left: "4%",
+              transform: "none",
+              width: "25%",
               maxWidth: "900px",
               zIndex: 8,
             }}
