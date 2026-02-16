@@ -358,7 +358,7 @@ body {
   }
 
   .page-content h1 {
-    font-size: 2.75rem !important;
+    font-size: 5.75rem !important;
     line-height: 1.2 !important;
   }
 
@@ -376,8 +376,9 @@ body {
 
   .page-content video,
   .page-content img {
-    max-width: 100% !important;
+    max-width: 65% !important;
     height: auto !important;
+    margin-top: 0%;
   }
 
   /* Home page */
@@ -398,11 +399,11 @@ body {
   /* FAQs page */
   .faqs-page h1,
   .faqs-page p {
-    font-size: 2rem !important;
+    font-size: 3rem !important;
   }
 
   .faqs-page button span {
-    font-size: 1.25rem !important;
+    font-size: 2.25rem !important;
   }
 
   .faqs-page .px-6,
@@ -413,7 +414,7 @@ body {
 
   /* Contact page */
   .contact-page h1 {
-    font-size: 2.5rem !important;
+    font-size: 5.5rem !important;
   }
 
   .contact-page h2 {
@@ -432,6 +433,15 @@ body {
     font-size: 1rem !important;
   }
 
+  .contact-page img[alt*="calendar"] {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .contact-page .text-yellow-200 {
+    font-size: 1rem !important;
+  }
+
   .contact-page .rounded-3xl,
   .contact-page .rounded-2xl {
     border-radius: 1.5rem !important;
@@ -446,6 +456,28 @@ body {
   .about-page .about-action {
     width: 55% !important;
     top: 62% !important;
+    left: 4% !important;
+  }
+
+  .about-page .about-background {
+    height: 980px !important;
+  }
+
+  .about-page .about-description {
+    top: 66% !important;
+    width: 90% !important;
+    font-size: 22px !important;
+    line-height: 1.5 !important;
+    padding: 0 1rem !important;
+  }
+
+  /* History page */
+  .history-page .grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .history-page video {
+    max-width: 100% !important;
   }
 
   /* Header adjustments */
@@ -479,14 +511,14 @@ body {
   }
 
   .title h1 {
-    font-size: 50px;
+    font-size: 71px;
     white-space: nowrap;
     overflow: visible;
   }
 
   /* Button adjustments */
   .button {
-    top: 52%;
+    top: 29%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -651,7 +683,7 @@ body {
   }
 
   .home-page > p {
-    font-size: 1.15rem !important;
+    font-size: 4rem !important;
   }
 
   .home-page video {
