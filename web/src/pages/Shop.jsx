@@ -2,6 +2,8 @@ import React from "react";
 
 const shopBackgroundUrl =
   "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267903/shoppage_background_hyq2xi.jpg";
+const oldAlohaPromoUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1769898855/old_aloha_promo_nzulco.jpg";
 
 function Shop() {
   return (
@@ -17,8 +19,13 @@ function Shop() {
       <div className="page-content">
         <h1 style={{ color: "white" }}>Shop</h1>
         <p style={{ color: "white" }}>
-          Browse our collection of merchandise and products.
+          COMING SOON <br /> Browse our collection of merchandise and products.
         </p>
+        <img
+          src={oldAlohaPromoUrl}
+          alt="Old Aloha promo"
+          className="w-full max-w-3xl mx-auto rounded-lg shadow-lg mt-6"
+        />
       </div>
     </div>
   );
