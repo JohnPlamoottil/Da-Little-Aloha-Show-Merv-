@@ -8,7 +8,9 @@ import Gallery from "./pages/Gallery";
 import Shop from "./pages/Shop";
 import HistoryOfDancing from "./pages/HistoryOfDancing";
 import ContactUs from "./pages/ContactUs";
-import logo from "./assets/logo.png";
+
+const logoUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267911/logo_mbimde.png";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +30,7 @@ function App() {
           <div className="nav-container">
             <div className="logo">
               <Link to="/" onClick={closeMenu} aria-label="Go to home">
-                <img src={logo} alt="Logo" style={{ width: "95px" }} />
+                <img src={logoUrl} alt="Logo" style={{ width: "95px" }} />
               </Link>
             </div>
 
@@ -120,7 +122,7 @@ function App() {
               <div className="footer-logo">
                 <Link to="/" aria-label="Go to home">
                   <img
-                    src={logo}
+                    src={logoUrl}
                     alt="Da Little Aloha Show"
                     style={{ marginLeft: "120px" }}
                   />
