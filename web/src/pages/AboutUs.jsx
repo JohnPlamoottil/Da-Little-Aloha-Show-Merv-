@@ -28,45 +28,47 @@ function AboutUs() {
         <p className="text-xl" style={{ fontSize: "45px" }}>
           Learn more about Da Little Aloha Show and Our Mission.
         </p>
-        <img
-          src={mervBioUrl}
-          alt="Merv bio"
-          className="about-action rounded-lg shadow-lg"
-          style={{
-            position: "absolute",
-            top: "34rem",
-            left: "-21%",
-            width: "93%",
-            maxWidth: "260px",
-            zIndex: 20,
-          }}
-        />
-        <img
-          src={mervActionPoseUrl}
-          alt="Merv action pose"
-          className="about-action rounded-lg shadow-lg"
-          style={{
-            position: "absolute",
-            top: "64rem",
-            left: "-21%",
-            width: "93%",
-            maxWidth: "260px",
-            zIndex: 20,
-          }}
-        />
-        <img
-          src={mervOutsideUrl}
-          alt="Merv outside"
-          className="about-action rounded-lg shadow-lg"
-          style={{
-            position: "absolute",
-            top: "94rem",
-            left: "-21%",
-            width: "93%",
-            maxWidth: "260px",
-            zIndex: 20,
-          }}
-        />
+        <div className="about-image-strip">
+          <img
+            src={mervBioUrl}
+            alt="Merv bio"
+            className="about-action rounded-lg shadow-lg"
+            style={{
+              position: "absolute",
+              top: "34rem",
+              left: "-21%",
+              width: "93%",
+              maxWidth: "260px",
+              zIndex: 20,
+            }}
+          />
+          <img
+            src={mervActionPoseUrl}
+            alt="Merv action pose"
+            className="about-action rounded-lg shadow-lg"
+            style={{
+              position: "absolute",
+              top: "64rem",
+              left: "-21%",
+              width: "93%",
+              maxWidth: "260px",
+              zIndex: 20,
+            }}
+          />
+          <img
+            src={mervOutsideUrl}
+            alt="Merv outside"
+            className="about-action rounded-lg shadow-lg"
+            style={{
+              position: "absolute",
+              top: "94rem",
+              left: "-21%",
+              width: "93%",
+              maxWidth: "260px",
+              zIndex: 20,
+            }}
+          />
+        </div>
 
         <div
           className="mt-4 w-full max-w-5xl mx-auto"
