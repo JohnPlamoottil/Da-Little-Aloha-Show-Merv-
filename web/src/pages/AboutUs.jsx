@@ -56,6 +56,7 @@ function AboutUs() {
               padding: "0 1.5rem",
               textAlign: "center",
               zIndex: 9,
+              color: "white",
             }}
           >
             We are Da Little Aloha Show! <br /> Originally from the islands but
