@@ -26,9 +26,9 @@ function AboutUs() {
           className="about-action rounded-lg shadow-lg"
           style={{
             position: "absolute",
-            top: "0.5rem",
-            left: "0.5rem",
-            width: "18%",
+            top: "34rem",
+            left: "-21%",
+            width: "93%",
             maxWidth: "260px",
             zIndex: 20,
           }}
@@ -60,17 +60,17 @@ function AboutUs() {
           <p
             style={{
               position: "absolute",
-              top: "52%",
+              top: "66%",
               left: "50%",
               transform: "translate(-50%, -50%)",
               width: "85%",
               maxWidth: "1100px",
-              fontSize: "28px",
+              fontSize: "31px",
               lineHeight: "1.3",
               padding: "0 1.5rem",
               textAlign: "center",
               zIndex: 9,
-              color: "white",
+              color: "beige",
             }}
           >
             We are Da Little Aloha Show! <br /> Originally from the islands but
