@@ -1,12 +1,17 @@
 import React from "react";
-import shopBackground from "../assets/shoppage_background.jpg";
+
+const shopBackgroundUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267903/shoppage_background_hyq2xi.jpg";
 
 function Shop() {
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-fixed bg-no-repeat"
+      className="min-h-screen bg-cover bg-center bg-fixed"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${shopBackground})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${shopBackgroundUrl})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <div className="page-content">

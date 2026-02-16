@@ -1,7 +1,11 @@
 import React from "react";
-import aboutBackground from "../assets/aboutpage_background.jpeg";
-import alohaPoster from "../assets/Aloha poster 1.png";
-import mervActionPose from "../assets/merv_actionpose.JPG";
+
+const aboutBackgroundUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267903/aboutpage_background_r7hfhp.jpg";
+const alohaPosterUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267905/Aloha_poster_1_ddqht2.png";
+const mervActionPoseUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267905/merv_actionpose_sh5wbe.jpg";
 
 function AboutUs() {
   return (
@@ -21,7 +25,7 @@ function AboutUs() {
           Learn more about Da Little Aloha Show and Our Mission.
         </p>
         <img
-          src={mervActionPose}
+          src={mervActionPoseUrl}
           alt="Merv action pose"
           className="about-action rounded-lg shadow-lg"
           style={{
@@ -33,31 +37,19 @@ function AboutUs() {
             zIndex: 20,
           }}
         />
-        <img
-          src={mervActionPose}
-          alt="Merv action pose"
-          className="about-action rounded-lg shadow-lg"
-          style={{
-            position: "absolute",
-            top: "34rem",
-            left: "-21%",
-            width: "93%",
-            maxWidth: "260px",
-            zIndex: 20,
-          }}
-        />
+
         <div
           className="mt-4 w-full max-w-5xl mx-auto"
           style={{ position: "relative" }}
         >
           <img
-            src={aboutBackground}
+            src={aboutBackgroundUrl}
             alt="About page background"
             className="about-background w-full rounded-lg shadow-lg block"
             style={{ height: "1400px", objectFit: "cover" }}
           />
           <img
-            src={alohaPoster}
+            src={alohaPosterUrl}
             alt="Aloha poster"
             className="about-poster rounded-lg shadow-lg"
             style={{
@@ -71,6 +63,7 @@ function AboutUs() {
             }}
           />
           <p
+            className="about-description"
             style={{
               position: "absolute",
               top: "62%",
@@ -94,8 +87,8 @@ function AboutUs() {
             Female. <br /> Mana, Melanie and Lori. <br /> Our traditional
             Polynesian show is typically 40-50mins. <br /> We include a showcase
             of Polynesian dances from Hawaii, Fiji, New Zealand - Haka! Tahiti,
-            and we even have the famous "FIRE DANCE" of Samoa! The Siva Afi!{" "}
-            <br /> We includes, all professional sound equipment, mic,
+            and we even have the famous "FIRE DANCE" of Samoa! <br /> The Siva
+            Afi! <br /> We includes, all professional sound equipment, mic,
             tiki-torches and encourage/teach crowd participation. <br /> Our
             cost is open to budget! <br /> We hope that you choose us at your
             next community event!! <br /> Our feedback from other municipalities

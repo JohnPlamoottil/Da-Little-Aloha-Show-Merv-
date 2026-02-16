@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import faqBackground from "../assets/faqpage_background.jpg";
+
+const faqBackgroundUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267904/faqpage_background_rrlv9n.jpg";
 
 function FAQs() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -40,7 +42,10 @@ function FAQs() {
     <div
       className="min-h-screen faqs-page bg-cover bg-center bg-fixed bg-no-repeat flex items-center justify-center py-20"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${faqBackground})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${faqBackgroundUrl})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         paddingTop: "120px",
       }}
     >
@@ -61,7 +66,7 @@ function FAQs() {
             className="w-full text-xl text-center"
             style={{ color: "white", fontSize: "45px", textAlign: "center" }}
           >
-            Frequently Asked Questions about our show and performances
+            Frequently Asked Questions <br /> about our show and performances
           </p>
         </div>
 

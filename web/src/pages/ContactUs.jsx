@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import contactUsBackground from "../assets/contactus_background.jpg";
-import calendarFeb2026 from "../assets/calendar_feb_2026.svg";
+const calendarFeb2026Url =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267905/calendar_feb_2026_dl9koz.svg";
+
+const contactUsBackgroundUrl =
+  "https://res.cloudinary.com/ds1fxskme/image/upload/v1771267905/contactus_background_l07a41.jpg";
 
 function ContactUs() {
   const calendlyUrl =
@@ -91,7 +94,7 @@ function ContactUs() {
     <div
       className="min-h-screen contact-page bg-center bg-no-repeat"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${contactUsBackground})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${contactUsBackgroundUrl})`,
         backgroundSize: "cover",
         backgroundAttachment: "scroll",
       }}
@@ -148,7 +151,7 @@ function ContactUs() {
 
               <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-white/90">
                 <img
-                  src={calendarFeb2026}
+                  src={calendarFeb2026Url}
                   alt="February 2026 calendar"
                   className="w-full h-auto"
                   style={{ width: "590px", paddingTop: "23px" }}

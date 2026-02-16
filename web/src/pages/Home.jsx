@@ -12,6 +12,8 @@ function Home() {
       className="page-content home-page flex flex-col items-center justify-center"
       style={{
         minHeight: "100vh",
+        width: "100%",
+        maxWidth: "100%",
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${homeBackgroundUrl})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
