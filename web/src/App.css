@@ -85,6 +85,22 @@ main {
     margin-top: -23.01rem;
     margin-bottom: 1rem;
   }
+
+  .about-image-strip {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem auto 0;
+    padding: 0.5rem 0;
+  }
+
+  .about-image-strip .about-action {
+    position: static !important;
+    width: 30% !important;
+    max-width: 220px !important;
+    height: auto !important;
+    flex: 0 1 auto;
+  }
 }
 
 @media (max-width: 480px) {
