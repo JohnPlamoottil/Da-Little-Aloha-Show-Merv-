@@ -128,10 +128,7 @@ function App() {
                   />
                 </Link>
               </div>
-              <p
-                className="footer-description"
-                style={{ fontSize: "1.2rem", marginLeft: "1.5rem" }}
-              >
+              <p className="footer-description" style={{ fontSize: "1.2rem" }}>
                 Honoring Samoan tradition through craftsmanship and flame. Every
                 hula dance is a bridge between heritage, artistry, and the
                 spirit of Siva Afi.
