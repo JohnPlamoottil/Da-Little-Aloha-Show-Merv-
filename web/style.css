@@ -359,7 +359,7 @@ body {
   }
 
   .page-content h1 {
-    font-size: 5.75rem !important;
+    font-size: 7.75rem !important;
     line-height: 1.2 !important;
   }
 
@@ -371,7 +371,7 @@ body {
   .page-content p,
   .page-content span,
   .page-content label {
-    font-size: 1.25rem !important;
+    font-size: 3.25rem !important;
     line-height: 1.5 !important;
   }
 
@@ -467,9 +467,9 @@ body {
   }
 
   .about-page .about-description {
-    top: 66% !important;
-    width: 90% !important;
-    font-size: 22px !important;
+    top: 57% !important;
+    width: 73% !important;
+    font-size: 20px !important;
     line-height: 1.5 !important;
     padding: 0 1rem !important;
   }

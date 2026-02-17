@@ -101,6 +101,18 @@ main {
     height: auto !important;
     flex: 0 1 auto;
   }
+
+  .about-background {
+    height: 1650px !important;
+  }
+
+  .about-description {
+    top: 64% !important;
+    width: 88% !important;
+    font-size: 24px !important;
+    line-height: 1.5 !important;
+    padding: 0 1rem !important;
+  }
 }
 
 @media (max-width: 480px) {
